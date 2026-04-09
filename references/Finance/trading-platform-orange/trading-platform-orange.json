@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "site": "Futubull (Futunn)",
-    "url": "https://www.futunn.com/en",
+    "site": "Trading Platform (Orange)",
+    "url": "",
     "date": "2026-04-08",
     "source": ["css-custom-properties", "computed-styles", "inline-styles"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/futunn/futunn.png",
+    "screenshotPath": "",
     "screenshotError": null,
-    "notes": "Dual-theme site (light/dark). CSS vars prefixed --cs-* are the primary design system tokens. Dark mode toggled via [data-theme='dark']. Custom font: MiSans (Simple + Semibold). Premium EN sections use BR Hendrix."
+    "notes": "Dual-theme site (light/dark). CSS vars prefixed --cs-* are the primary design system tokens. Dark mode toggled via [data-theme='dark']. Custom sans-serif fonts for headings and body."
   },
 
   "color": {
@@ -70,9 +70,9 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "MiSans Semibold, HelveticaNeue-Bold, Helvetica-Bold, sans-serif",
-      "body":    "MiSans Simple, HelveticaNeue, Helvetica, sans-serif, -apple-system, system-ui",
-      "premium": "BR Hendrix, PingFangSC, PingFangHK, HelveticaNeue, sans-serif, Arial",
+      "heading": "HelveticaNeue-Bold, Helvetica-Bold, sans-serif",
+      "body":    "HelveticaNeue, Helvetica, sans-serif, -apple-system, system-ui",
+      "premium": "PingFangSC, PingFangHK, HelveticaNeue, sans-serif, Arial",
       "mono":    "monospace"
     },
     "fontSizes": {
@@ -306,6 +306,6 @@
     "tone":           ["professional", "trustworthy", "energetic", "modern"],
     "visualLanguage": ["dual light/dark mode", "data-dense", "flat 2D", "orange-accent brand identity"],
     "industry":       "Finance",
-    "notes":          "Futubull is a stock trading platform (Futu Holdings). Orange (#FF6900) is the dominant brand/action color used for primary CTAs, the logo, and hover states. The hero section uses a dark background with glowing orange financial chart imagery. Body sections are light with white card surfaces. Full dual-theme support — light mode is the default. Custom typeface MiSans (developed by Xiaomi, used across Futu apps for Chinese/English multilingual content). Market-specific accent colors distinguish different exchanges (US, HK, SG, AU, JP, CN, crypto)."
+    "notes":          "Stock trading platform design. Orange (#FF6900) is the dominant brand/action color used for primary CTAs, the logo, and hover states. The hero section uses a dark background with glowing orange financial chart imagery. Body sections are light with white card surfaces. Full dual-theme support — light mode is the default. Market-specific accent colors distinguish different exchanges (US, HK, SG, AU, JP, CN, crypto)."
   }
 }

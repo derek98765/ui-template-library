@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Mox by Standard Chartered",
-    "url": "https://mox.com",
+    "site": "Neo Bank (Cyan)",
+    "url": "",
     "date": "2026-04-09",
     "source": ["inline-styles", "computed-styles", "class-name"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/mox/mox.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -83,19 +83,11 @@
 
   "typography": {
     "fontFamilies": {
-      "heading":  "\"Maison Neue\", sans-serif",
-      "body":     "\"Maison Neue\", sans-serif",
+      "heading":  "\"Helvetica Neue\", Arial, sans-serif",
+      "body":     "\"Helvetica Neue\", Arial, sans-serif",
       "bodyCJK":  "\"Noto Sans TC\", sans-serif",
-      "mono":     "\"Maison Neue Mono\", monospace",
+      "mono":     "\"Courier New\", monospace",
       "icon":     "icon"
-    },
-    "fontFiles": {
-      "light":    "/static/MaisonNeue-Light-9c4b00cdf3af45edf0964d6ce8e7cd0a.woff2",
-      "book":     "/static/MaisonNeue-Book-7bcb7f7dbf997bf43f9a9202ec51566b.woff2",
-      "medium":   "/static/MaisonNeue-Medium-5d6886ac804a491c685a4437104cc756.woff2",
-      "demi":     "/static/MaisonNeue-Demi-29bb49ff1394dd7d099b1e55be9d4a3a.woff2",
-      "bold":     "/static/MaisonNeue-Bold-e1c0e7462072049426d82d23a3ca1f11.woff2",
-      "mono":     "/static/MaisonNeue-Mono-6648c9a60bd59739da44605bafac2b7d.woff2"
     },
     "fontSizes": {
       "xs":   "10.4px",
@@ -350,6 +342,6 @@
     "tone": ["bold", "energetic", "modern", "playful", "youthful", "approachable"],
     "visualLanguage": ["black + neon cyan palette", "gradient accents (cyan to amber)", "dark hero sections", "pill-shaped buttons", "editorial imagery", "light mode page with dark feature sections"],
     "industry": "Finance",
-    "notes": "Mox is a virtual bank by Standard Chartered targeting younger demographics in Hong Kong. The signature color is a neon cyan (#0ffaff) used as an active/accent color against a predominantly black-and-white base. Headings use Maison Neue at very light weights (300) giving an editorial, premium feel. The primary brand gradient is 45deg cyan-to-amber (#0ffaff → #ffbd02). All buttons are pill-shaped (border-radius: 5em). The navbar is transparent and full-height (120px). Cards use large border-radius (24px) with heavy drop shadows. A custom icon font is embedded. CJK language support via Noto Sans TC fallback."
+    "notes": "Virtual bank targeting younger demographics. The signature color is a neon cyan (#0ffaff) used as an active/accent color against a predominantly black-and-white base. Headings use a sans-serif at very light weights (300) giving an editorial, premium feel. The primary brand gradient is 45deg cyan-to-amber (#0ffaff → #ffbd02). All buttons are pill-shaped (border-radius: 5em). The navbar is transparent and full-height (120px). Cards use large border-radius (24px) with heavy drop shadows. A custom icon font is embedded. CJK language support via Noto Sans TC fallback."
   }
 }

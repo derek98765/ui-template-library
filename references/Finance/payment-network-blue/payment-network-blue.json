@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Visa",
-    "url": "https://www.visa.com/en-us/",
+    "site": "Payment Network (Blue)",
+    "url": "",
     "date": "2026-04-09",
     "source": ["css-custom-properties", "computed-styles", "inline-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/visa/visa.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -78,22 +78,9 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"Visa Dialect UI\", \"Visa Dialect\", Arial, sans-serif",
-      "body":    "\"Visa Dialect UI\", \"Visa Dialect\", Arial, sans-serif",
+      "heading": "Arial, sans-serif",
+      "body":    "Arial, sans-serif",
       "mono":    "\"Courier New\", Courier, monospace"
-    },
-    "fontStacks": {
-      "light":    "visa-font-dialect-latin-light, visa-font--dialect-cyrillic-light, sans-serif",
-      "regular":  "visa-font--dialect-latin-regular, visa-font--dialect-cyrillic-regular, sans-serif",
-      "medium":   "visa-font--dialect-latin-medium, visa-font--dialect-cyrillic-medium, sans-serif",
-      "semibold": "visa-font--dialect-latin-semi-bold, visa-font--dialect-cyrillic-semi-bold, sans-serif",
-      "bold":     "visa-font--dialect-latin-bold, visa-font--dialect-cyrillic-bold, sans-serif"
-    },
-    "fontFiles": {
-      "regular":  "/fonts/VisaDialectUI-Regular-latinwAlts-Web.woff2",
-      "medium":   "/fonts/VisaDialectUI-Medium-latinwAlts-Web.woff2",
-      "semibold": "/fonts/VisaDialectUI-Semibold-latinwAlts-Web.woff2",
-      "bold":     "/fonts/VisaDialectUI-Bold-latinwAlts-Web.woff2"
     },
     "fontSizes": {
       "xs":   "12px",
@@ -388,6 +375,6 @@
     "tone": ["trustworthy", "professional", "premium", "secure", "accessible"],
     "visualLanguage": ["light mode primary", "clean flat 2D", "dark hero sections", "pill-shaped buttons", "editorial imagery"],
     "industry": "Finance",
-    "notes": "Visa uses a proprietary font family (Visa Dialect UI) across all weights. The primary brand blue (#1434cb) is a deep cobalt used consistently for CTAs, links, and interactive states. Buttons are universally pill-shaped (border-radius: 1000px). Headings use lightweight (400) font weights for an editorial, premium feel. The design system includes a complete dark theme via [data-theme=dark]. Section spacing is generous especially on desktop (10rem vertical). Card designs range from sharp-cornered panels (0px radius) to softly rounded feature cards."
+    "notes": "Payment network design. Uses a standard sans-serif font stack across all weights. The primary brand blue (#1434cb) is a deep cobalt used consistently for CTAs, links, and interactive states. Buttons are universally pill-shaped (border-radius: 1000px). Headings use lightweight (400) font weights for an editorial, premium feel. The design system includes a complete dark theme via [data-theme=dark]. Section spacing is generous especially on desktop (10rem vertical). Card designs range from sharp-cornered panels (0px radius) to softly rounded feature cards."
   }
 }

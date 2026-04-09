@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "site": "Ant Bank Hong Kong",
-    "url": "https://www.antbank.hk/home?lang=en_us",
+    "site": "Digital Bank (Blue)",
+    "url": "",
     "date": "2026-04-09",
     "source": ["computed-styles", "inline-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/antbank/antbank.png",
+    "screenshotPath": "",
     "screenshotError": null,
-    "notes": "CSS loaded dynamically via CDN (gw.alipayobjects.com) with CORS blocking; all tokens extracted via getComputedStyle"
+    "notes": "CSS loaded dynamically via CDN with CORS blocking; all tokens extracted via getComputedStyle"
   },
 
   "color": {
@@ -71,17 +71,17 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"AlibabaPuHuiTi\", \"PingFang SC\", \"Helvetica Neue\", sans-serif",
-      "body":    "\"AlibabaPuHuiTi\", \"PingFang SC\", \"Helvetica Neue\", sans-serif",
+      "heading": "\"PingFang SC\", \"Helvetica Neue\", sans-serif",
+      "body":    "\"PingFang SC\", \"Helvetica Neue\", sans-serif",
       "mono":    "monospace"
     },
     "fontVariants": {
-      "thin":     "AlibabaPuHuiTi-2-35-Thin",
-      "light":    "AlibabaPuHuiTi-2-45-Light",
-      "regular":  "AlibabaPuHuiTi-2-55-Regular",
-      "medium":   "AlibabaPuHuiTi-2-65-Medium",
-      "bold":     "AlibabaPuHuiTi-2-75-SemiBold",
-      "heavy":    "AlibabaPuHuiTi-2-85-Bold"
+      "thin":     "system-thin",
+      "light":    "system-light",
+      "regular":  "system-regular",
+      "medium":   "system-medium",
+      "bold":     "system-semibold",
+      "heavy":    "system-bold"
     },
     "fontSizes": {
       "xs":   "10.8px",
@@ -309,8 +309,8 @@
 
   "brand": {
     "tone": ["trustworthy", "modern", "accessible", "clean", "tech-forward"],
-    "visualLanguage": ["vivid blue navbar (#0067FF)", "light blue tinted sections", "alternating white/#F3F6FD section backgrounds", "cyan accent highlights", "Alibaba proprietary font", "flat clean UI"],
+    "visualLanguage": ["vivid blue navbar (#0067FF)", "light blue tinted sections", "alternating white/#F3F6FD section backgrounds", "cyan accent highlights", "flat clean UI"],
     "industry": "Finance",
-    "notes": "Ant Bank HK is a virtual bank backed by Ant Group (Alibaba). Uses the proprietary Alibaba PuHuiTi typeface across all weights. Primary brand color is a vivid cobalt blue (#0067FF) used solidly in the sticky navbar. Section backgrounds alternate between white and a very light blue-grey (#F3F6FD). Cyan (#33C7FF) is used as a secondary accent. No CSS custom properties defined at :root — all styles are injected dynamically from CDN (gw.alipayobjects.com). Border radii are mixed: cards use 10px, pills use 30px, hero section bottom uses asymmetric 0px 0px 24px 24px. The max content width is 1200px."
+    "notes": "Virtual bank design. Primary brand color is a vivid cobalt blue (#0067FF) used solidly in the sticky navbar. Section backgrounds alternate between white and a very light blue-grey (#F3F6FD). Cyan (#33C7FF) is used as a secondary accent. No CSS custom properties defined at :root — all styles are injected dynamically from CDN. Border radii are mixed: cards use 10px, pills use 30px, hero section bottom uses asymmetric 0px 0px 24px 24px. The max content width is 1200px."
   }
 }

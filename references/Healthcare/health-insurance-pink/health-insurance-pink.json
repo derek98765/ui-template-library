@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Bowtie",
-    "url": "https://www.bowtie.com.hk/en",
+    "site": "Health Insurance (Pink)",
+    "url": "",
     "date": "2026-04-08",
     "source": ["computed-styles", "css-class-names", "inline-styles", "inferred"],
-    "screenshotPath": "/Users/jester/Downloads/styles-extractor/references/Healthcare/bowtie/bowtie.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -54,8 +54,8 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "Gilroy, 'Noto Sans TC', sans-serif",
-      "body":    "Gilroy, 'Noto Sans TC', sans-serif",
+      "heading": "'Noto Sans TC', sans-serif",
+      "body":    "'Noto Sans TC', sans-serif",
       "mono":    "monospace"
     },
     "fontSizes": {
@@ -277,6 +277,6 @@
     "tone":           ["friendly", "trustworthy", "energetic", "clean", "professional"],
     "visualLanguage": ["light mode", "flat 2D", "soft gradients", "rounded"],
     "industry":       "Healthcare",
-    "notes":          "Bowtie is a Hong Kong online health insurance company built on Webflow. The design system centers on a vivid hot pink (#FF0068) paired with soft white and light gray backgrounds. A secondary electric purple (#B04BFF) provides contrast. Custom font 'Gilroy' (bold 700) drives all headings. Buttons are exclusively pill-shaped (50px radius). Cards use subtle drop shadows with 16px radius, and brand tint backgrounds (#FFF0F6, #FFD9E8) create warmth throughout the layout."
+    "notes":          "Online health insurance design. The design system centers on a vivid hot pink (#FF0068) paired with soft white and light gray backgrounds. A secondary electric purple (#B04BFF) provides contrast. Buttons are exclusively pill-shaped (50px radius). Cards use subtle drop shadows with 16px radius, and brand tint backgrounds (#FFF0F6, #FFD9E8) create warmth throughout the layout."
   }
 }
