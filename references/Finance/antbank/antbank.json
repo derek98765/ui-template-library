@@ -1,0 +1,316 @@
+{
+  "_meta": {
+    "site": "Ant Bank Hong Kong",
+    "url": "https://www.antbank.hk/home?lang=en_us",
+    "date": "2026-04-09",
+    "source": ["computed-styles", "inline-styles", "inferred"],
+    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/antbank/antbank.png",
+    "screenshotError": null,
+    "notes": "CSS loaded dynamically via CDN (gw.alipayobjects.com) with CORS blocking; all tokens extracted via getComputedStyle"
+  },
+
+  "color": {
+    "brand": {
+      "primary":       "#0067FF",
+      "primaryHover":  "#1C5ACE",
+      "primaryDark":   "#001F4D",
+      "cyanAccent":    "#33C7FF",
+      "cyanLight":     "#00BDFF"
+    },
+    "semantic": {
+      "success": "#00BD6E",
+      "error":   "#DB1320",
+      "warning": "#FF9500",
+      "info":    "#0067FF"
+    },
+    "neutral": {
+      "50":  "#F9F9F9",
+      "100": "#F3F6FD",
+      "200": "#E0EBFF",
+      "300": "#CDCDCD",
+      "400": "#C3C3C3",
+      "500": "#999999",
+      "600": "#7F7F7F",
+      "650": "#7588A5",
+      "700": "#515151",
+      "800": "#333333",
+      "900": "#292F40"
+    },
+    "background": {
+      "page":       "#FFFFFF",
+      "subtle":     "#F3F6FD",
+      "card":       "#FFFFFF",
+      "cardBlue":   "#ECF7FF",
+      "blueTint":   "#E0EBFF",
+      "dark":       "#001F4D",
+      "overlay":    "rgba(73, 80, 101, 0.95)",
+      "overlayDim": "rgba(0, 0, 0, 0.5)"
+    },
+    "gradient": {
+      "heroSection":   "linear-gradient(rgb(219, 240, 253), rgb(243, 245, 252))",
+      "sectionFade":   "linear-gradient(rgb(243, 245, 252) 0%, rgb(255, 255, 255) 30%)"
+    },
+    "text": {
+      "primary":   "#292F40",
+      "dark":      "rgba(0, 0, 0, 0.85)",
+      "secondary": "#7588A5",
+      "muted":     "#999999",
+      "tertiary":  "#7F7F7F",
+      "onDark":    "#FFFFFF",
+      "link":      "#0067FF"
+    },
+    "border": {
+      "default": "#EDEDED",
+      "subtle":  "#C3C3C3",
+      "medium":  "#CDCDCD",
+      "strong":  "#001F4D",
+      "focus":   "#0067FF",
+      "cyan":    "#33C7FF"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "\"AlibabaPuHuiTi\", \"PingFang SC\", \"Helvetica Neue\", sans-serif",
+      "body":    "\"AlibabaPuHuiTi\", \"PingFang SC\", \"Helvetica Neue\", sans-serif",
+      "mono":    "monospace"
+    },
+    "fontVariants": {
+      "thin":     "AlibabaPuHuiTi-2-35-Thin",
+      "light":    "AlibabaPuHuiTi-2-45-Light",
+      "regular":  "AlibabaPuHuiTi-2-55-Regular",
+      "medium":   "AlibabaPuHuiTi-2-65-Medium",
+      "bold":     "AlibabaPuHuiTi-2-75-SemiBold",
+      "heavy":    "AlibabaPuHuiTi-2-85-Bold"
+    },
+    "fontSizes": {
+      "xs":   "10.8px",
+      "sm":   "12px",
+      "base": "14px",
+      "md":   "16px",
+      "lg":   "16.02px",
+      "xl":   "32px",
+      "2xl":  "36px",
+      "3xl":  "40px",
+      "4xl":  "80px"
+    },
+    "fontWeights": {
+      "regular":  400,
+      "medium":   500,
+      "semibold": 600,
+      "bold":     700
+    },
+    "lineHeights": {
+      "tight":   1.2,
+      "heading": 1.375,
+      "normal":  1.4,
+      "body":    1.6,
+      "loose":   2.0
+    },
+    "letterSpacing": {
+      "normal": "normal",
+      "wide":   "0.02em"
+    },
+    "headings": {
+      "h1": { "fontSize": "80px",  "fontWeight": 700, "lineHeight": 1.2,    "letterSpacing": "normal", "color": "#292F40" },
+      "h2": { "fontSize": "36px",  "fontWeight": 700, "lineHeight": "55px", "letterSpacing": "normal", "color": "rgba(0,0,0,0.85)" },
+      "h3": { "fontSize": "16px",  "fontWeight": 400, "lineHeight": "22px", "letterSpacing": "normal", "color": "rgba(0,0,0,0.85)" },
+      "h4": { "fontSize": "14px",  "fontWeight": 600, "lineHeight": 1.4,    "letterSpacing": "normal", "color": "#292F40" },
+      "h5": { "fontSize": "12px",  "fontWeight": 600, "lineHeight": 1.4,    "letterSpacing": "normal", "color": "#292F40" },
+      "h6": { "fontSize": "10.8px","fontWeight": 600, "lineHeight": 1.4,    "letterSpacing": "normal", "color": "#292F40" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "4px",
+    "scale": {
+      "1":  "4px",
+      "2":  "8px",
+      "3":  "12px",
+      "4":  "16px",
+      "5":  "20px",
+      "6":  "24px",
+      "8":  "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px",
+      "20": "80px"
+    },
+    "containers": {
+      "content":  "1200px",
+      "sm":       "768px",
+      "md":       "1024px",
+      "lg":       "1200px"
+    },
+    "grid": {
+      "columns": 12,
+      "gutter":  "24px",
+      "margin":  "40px"
+    },
+    "sectionPadding": {
+      "vertical":   "80px",
+      "horizontal": "40px"
+    }
+  },
+
+  "border": {
+    "radius": {
+      "none":   "0",
+      "sm":     "8px",
+      "base":   "10px",
+      "lg":     "24px",
+      "pill":   "30px",
+      "full":   "50%",
+      "bottom": "0px 0px 24px 24px"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px"
+    },
+    "colors": {
+      "default": "#EDEDED",
+      "subtle":  "#CDCDCD",
+      "strong":  "#001F4D",
+      "focus":   "#0067FF"
+    },
+    "styles": ["solid"]
+  },
+
+  "shadows": {
+    "sm":     "rgba(0, 0, 0, 0.06) 0px 6px 10px 0px",
+    "md":     "rgba(0, 0, 0, 0.07) 0px 13px 24px 0px",
+    "lg":     "rgba(0, 0, 0, 0.11) 0px 12px 34px 0px",
+    "inset":  "rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset",
+    "glow":   "rgba(217, 119, 87, 0.5) 0px 0px 10px 0px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px 0px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px 0px inset"
+  },
+  "elevation": {
+    "card":     "sm",
+    "dropdown": "md",
+    "modal":    "lg",
+    "tooltip":  "sm"
+  },
+
+  "motion": {
+    "normal":  "0.3s ease",
+    "fast":    "0.15s ease",
+    "slow":    "0.5s ease-out",
+    "easing":  "ease"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#0067FF",
+        "text":         "#FFFFFF",
+        "border":       "none",
+        "borderRadius": "30px",
+        "paddingX":     "24px",
+        "paddingY":     "12px",
+        "fontWeight":   600,
+        "fontSize":     "16px",
+        "height":       "48px"
+      },
+      "secondary": {
+        "background":   "#FFFFFF",
+        "text":         "#0067FF",
+        "border":       "1px solid #0067FF",
+        "borderRadius": "30px",
+        "paddingX":     "24px",
+        "paddingY":     "12px",
+        "fontWeight":   600,
+        "fontSize":     "16px",
+        "height":       "48px"
+      },
+      "ghost": {
+        "background":   "transparent",
+        "text":         "#FFFFFF",
+        "border":       "1px solid #FFFFFF",
+        "borderRadius": "30px",
+        "paddingX":     "24px",
+        "paddingY":     "12px",
+        "fontWeight":   400,
+        "fontSize":     "16px"
+      },
+      "sizes": {
+        "sm": { "height": "32px", "paddingX": "16px", "fontSize": "12px" },
+        "md": { "height": "40px", "paddingX": "20px", "fontSize": "14px" },
+        "lg": { "height": "48px", "paddingX": "24px", "fontSize": "16px" }
+      }
+    },
+    "input": {
+      "background":       "#FFFFFF",
+      "borderColor":      "#CDCDCD",
+      "borderWidth":      "1px",
+      "borderRadius":     "8px",
+      "padding":          "10px 16px",
+      "fontSize":         "14px",
+      "placeholderColor": "#999999",
+      "focus": {
+        "borderColor": "#0067FF",
+        "borderWidth":  "2px",
+        "outline":     "none"
+      }
+    },
+    "card": {
+      "background":   "#FFFFFF",
+      "border":       "none",
+      "borderRadius": "10px",
+      "padding":      "24px",
+      "shadow":       "sm",
+      "altBackground": "#ECF7FF"
+    },
+    "badge": {
+      "background":   "#E0EBFF",
+      "text":         "#0067FF",
+      "borderRadius": "30px",
+      "padding":      "4px 12px",
+      "fontSize":     "12px",
+      "fontWeight":   500
+    },
+    "navbar": {
+      "background":   "#0067FF",
+      "height":       "110px",
+      "borderBottom": "none",
+      "position":     "sticky",
+      "itemColor":    "#FFFFFF",
+      "activeColor":  "#FFFFFF",
+      "activeStyle":  "underline",
+      "fontSize":     "16px",
+      "fontWeight":   400,
+      "lineHeight":   "24px"
+    },
+    "modal": {
+      "background":   "#FFFFFF",
+      "overlay":      "rgba(73, 80, 101, 0.95)",
+      "borderRadius": "10px",
+      "padding":      "32px",
+      "shadow":       "lg"
+    }
+  },
+
+  "iconography": {
+    "style": "filled",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+  "imagery": {
+    "type":          "mixed",
+    "style":         "mixed",
+    "humanPresence": "yes-prominent",
+    "borderRadius":  "10px",
+    "aspectRatios":  ["16:9", "4:3", "1:1"],
+    "treatments":    ["drop-shadow", "gradient overlay", "bottom-rounded sections (0px 0px 24px 24px)"],
+    "notes":         "Hero section uses real lifestyle photography of business people (prominent, full-width). Feature sections use 2D flat icons and app UI screenshots. A mix of photography in hero/promos and flat illustration-style icons throughout."
+  },
+
+  "brand": {
+    "tone": ["trustworthy", "modern", "accessible", "clean", "tech-forward"],
+    "visualLanguage": ["vivid blue navbar (#0067FF)", "light blue tinted sections", "alternating white/#F3F6FD section backgrounds", "cyan accent highlights", "Alibaba proprietary font", "flat clean UI"],
+    "industry": "Finance",
+    "notes": "Ant Bank HK is a virtual bank backed by Ant Group (Alibaba). Uses the proprietary Alibaba PuHuiTi typeface across all weights. Primary brand color is a vivid cobalt blue (#0067FF) used solidly in the sticky navbar. Section backgrounds alternate between white and a very light blue-grey (#F3F6FD). Cyan (#33C7FF) is used as a secondary accent. No CSS custom properties defined at :root — all styles are injected dynamically from CDN (gw.alipayobjects.com). Border radii are mixed: cards use 10px, pills use 30px, hero section bottom uses asymmetric 0px 0px 24px 24px. The max content width is 1200px."
+  }
+}

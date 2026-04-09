@@ -1,0 +1,393 @@
+{
+  "_meta": {
+    "site": "Visa",
+    "url": "https://www.visa.com/en-us/",
+    "date": "2026-04-09",
+    "source": ["css-custom-properties", "computed-styles", "inline-styles", "inferred"],
+    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/visa/visa.png",
+    "screenshotError": null
+  },
+
+  "color": {
+    "brand": {
+      "primary": "#1434cb",
+      "primaryHover": "#0d2181",
+      "primaryActive": "#20317e",
+      "primaryDarkTheme": "#6ea5f6",
+      "secondary": "#353535",
+      "secondaryHover": "#1a1a1a",
+      "accent": "#1a1f71"
+    },
+    "semantic": {
+      "success": "#008a32",
+      "error": "#d22730",
+      "warning": "#d27b00",
+      "info": "#1434cb"
+    },
+    "neutral": {
+      "50":  "#f5f5f5",
+      "100": "#eeeeee",
+      "200": "#dedede",
+      "300": "#b9b9b9",
+      "400": "#b2b2b2",
+      "500": "#757575",
+      "600": "#656565",
+      "700": "#353535",
+      "800": "#1a1a1a",
+      "900": "#181b1d"
+    },
+    "background": {
+      "page":    "#ffffff",
+      "card":    "#ffffff",
+      "secondary": "#eeeeee",
+      "tertiary": "#f5f5f5",
+      "featureCard": "#fff6de",
+      "inverse": "#181b1d",
+      "overlay": "#00000080",
+      "hoverOverlay": "#00000008",
+      "modal": "#000000bf"
+    },
+    "text": {
+      "primary":   "#1a1a1a",
+      "secondary": "#353535",
+      "tertiary":  "#757575",
+      "muted":     "#656565",
+      "link":      "#1434cb",
+      "disabled":  "#b2b2b2",
+      "onDark":    "#ffffff",
+      "inverse":   "#ffffff"
+    },
+    "border": {
+      "default": "#dedede",
+      "subtle":  "#1a1a1a26",
+      "strong":  "#1a1a1a",
+      "focus":   "#1434cb"
+    },
+    "darkTheme": {
+      "bgPrimary":   "#1a1a1a",
+      "bgSecondary": "#2a2a2a",
+      "bgTertiary":  "#2c2c2c",
+      "textPrimary": "#ffffff",
+      "textSecondary": "#dedede",
+      "textMuted":   "#b9b9b9",
+      "border":      "#ffffff26",
+      "link":        "#4a90e2",
+      "linkHover":   "#6ba3f0"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "\"Visa Dialect UI\", \"Visa Dialect\", Arial, sans-serif",
+      "body":    "\"Visa Dialect UI\", \"Visa Dialect\", Arial, sans-serif",
+      "mono":    "\"Courier New\", Courier, monospace"
+    },
+    "fontStacks": {
+      "light":    "visa-font-dialect-latin-light, visa-font--dialect-cyrillic-light, sans-serif",
+      "regular":  "visa-font--dialect-latin-regular, visa-font--dialect-cyrillic-regular, sans-serif",
+      "medium":   "visa-font--dialect-latin-medium, visa-font--dialect-cyrillic-medium, sans-serif",
+      "semibold": "visa-font--dialect-latin-semi-bold, visa-font--dialect-cyrillic-semi-bold, sans-serif",
+      "bold":     "visa-font--dialect-latin-bold, visa-font--dialect-cyrillic-bold, sans-serif"
+    },
+    "fontFiles": {
+      "regular":  "/fonts/VisaDialectUI-Regular-latinwAlts-Web.woff2",
+      "medium":   "/fonts/VisaDialectUI-Medium-latinwAlts-Web.woff2",
+      "semibold": "/fonts/VisaDialectUI-Semibold-latinwAlts-Web.woff2",
+      "bold":     "/fonts/VisaDialectUI-Bold-latinwAlts-Web.woff2"
+    },
+    "fontSizes": {
+      "xs":   "12px",
+      "sm":   "14px",
+      "base": "16px",
+      "md":   "18px",
+      "lg":   "20px",
+      "xl":   "24px",
+      "2xl":  "32px",
+      "3xl":  "40px",
+      "4xl":  "52px",
+      "5xl":  "64px",
+      "6xl":  "80px"
+    },
+    "fontSizeTokens": {
+      "bodyS":  "0.875rem",
+      "bodyM":  "1rem",
+      "bodyL":  "1.25rem",
+      "bodyXL": "1.5rem",
+      "h3":     "2rem",
+      "h2":     "2.5rem",
+      "h1":     "3.25rem",
+      "h1Large": "4rem",
+      "heroMobile": "2.5rem",
+      "heroDesktop": "5rem"
+    },
+    "fontWeights": {
+      "light":    300,
+      "regular":  400,
+      "medium":   500,
+      "semibold": 600,
+      "bold":     700
+    },
+    "lineHeights": {
+      "tight":   1.2,
+      "snug":    1.3,
+      "normal":  1.5,
+      "relaxed": 1.625,
+      "loose":   2.0
+    },
+    "letterSpacing": {
+      "tighter": "-0.03em",
+      "tight":   "-0.01em",
+      "normal":  "0",
+      "wide":    "0.01em"
+    },
+    "headings": {
+      "h1": { "fontSize": "3.25rem", "fontWeight": 400, "lineHeight": 1.2, "letterSpacing": "-0.02em", "color": "#1a1a1a" },
+      "h2": { "fontSize": "2.5rem",  "fontWeight": 400, "lineHeight": 1.2, "letterSpacing": "-0.01em", "color": "#1a1a1a" },
+      "h3": { "fontSize": "2rem",    "fontWeight": 400, "lineHeight": 1.3, "letterSpacing": "0",       "color": "#1a1a1a" },
+      "h4": { "fontSize": "1.5rem",  "fontWeight": 500, "lineHeight": 1.4, "letterSpacing": "0",       "color": "#1a1a1a" },
+      "h5": { "fontSize": "1.25rem", "fontWeight": 500, "lineHeight": 1.4, "letterSpacing": "0",       "color": "#1a1a1a" },
+      "h6": { "fontSize": "1rem",    "fontWeight": 600, "lineHeight": 1.5, "letterSpacing": "0",       "color": "#1a1a1a" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "4px",
+    "scale": {
+      "xs":   "0.25rem",
+      "s":    "0.5rem",
+      "sm":   "0.75rem",
+      "m":    "1rem",
+      "l":    "1.5rem",
+      "xl":   "2rem",
+      "xxl":  "3rem",
+      "xxxl": "4rem"
+    },
+    "scalePx": {
+      "xs":   "4px",
+      "s":    "8px",
+      "sm":   "12px",
+      "m":    "16px",
+      "l":    "24px",
+      "xl":   "32px",
+      "xxl":  "48px",
+      "xxxl": "64px"
+    },
+    "componentPadding": {
+      "mobile":  "1.5rem",
+      "tablet":  "2rem",
+      "desktop": "3rem"
+    },
+    "sectionSpacing": {
+      "mobile":  "3rem",
+      "tablet":  "5rem",
+      "desktop": "10rem"
+    },
+    "gutters": {
+      "xs": "0.5rem",
+      "s":  "16px",
+      "m":  "32px",
+      "l":  "48px",
+      "xl": "3rem"
+    },
+    "containers": {
+      "sm":  "768px",
+      "md":  "1023px",
+      "lg":  "1280px",
+      "xl":  "1439px",
+      "2xl": "1920px"
+    },
+    "grid": {
+      "columns": 12,
+      "gutter":  "32px",
+      "margin":  "48px"
+    },
+    "sectionPadding": {
+      "vertical":   "160px",
+      "horizontal": "48px"
+    }
+  },
+
+  "breakpoints": {
+    "xs": "768px",
+    "s":  "1023px",
+    "m":  "1439px",
+    "l":  "1920px"
+  },
+
+  "border": {
+    "radius": {
+      "none": "0",
+      "sm":   "4px",
+      "md":   "8px",
+      "lg":   "12px",
+      "xl":   "16px",
+      "2xl":  "24px",
+      "pill": "1000px"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px",
+      "thick":  "4px"
+    },
+    "colors": {
+      "default": "#dedede",
+      "subtle":  "#1a1a1a26",
+      "strong":  "#1a1a1a",
+      "focus":   "#1434cb"
+    },
+    "styles": ["solid", "dashed", "dotted"]
+  },
+
+  "shadows": {
+    "sm": "0 1px 2px #00000008",
+    "md": "0 4px 6px #0000001a",
+    "lg": "0 10px 15px #0000001a",
+    "xl": "0 20px 25px #0000001a",
+    "card": "0 4px 16px #00000026, 0 0 2px #0000001a",
+    "cardDark": "0 4px 24px #00000080, 0 2px 12px #0000004d, 0 0 0 1px #ffffff1a",
+    "header": "0 2px 4px rgba(0,0,0,0.1)"
+  },
+  "elevation": {
+    "card":     "card",
+    "dropdown": "md",
+    "modal":    "lg",
+    "tooltip":  "sm"
+  },
+
+  "motion": {
+    "fast":   "0.15s ease",
+    "normal": "0.2s ease",
+    "slow":   "0.3s ease",
+    "easing": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "easingMaterial": "cubic-bezier(0.4, 0, 0.2, 1)"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#1434cb",
+        "text":         "#ffffff",
+        "border":       "none",
+        "borderRadius": "1000px",
+        "paddingX":     "24px",
+        "paddingY":     "16px",
+        "fontWeight":   500,
+        "fontSize":     "14px",
+        "height":       "48px",
+        "hover": {
+          "background": "#0d2181"
+        }
+      },
+      "secondary": {
+        "background":   "transparent",
+        "text":         "#1434cb",
+        "border":       "1px solid #1434cb",
+        "borderRadius": "1000px",
+        "paddingX":     "24px",
+        "paddingY":     "16px",
+        "fontWeight":   500,
+        "fontSize":     "14px",
+        "height":       "48px"
+      },
+      "ghost": {
+        "background":   "transparent",
+        "text":         "#1a1a1a",
+        "border":       "1px solid #1a1a1a",
+        "borderRadius": "1000px",
+        "paddingX":     "24px",
+        "paddingY":     "16px",
+        "fontWeight":   500,
+        "fontSize":     "14px",
+        "height":       "48px"
+      },
+      "sizes": {
+        "sm": { "height": "36px", "paddingX": "12px", "fontSize": "12px" },
+        "md": { "height": "40px", "paddingX": "16px", "fontSize": "14px" },
+        "lg": { "height": "48px", "paddingX": "24px", "fontSize": "16px" }
+      },
+      "focus": {
+        "outline": "2px dotted #1434cb",
+        "outlineOffset": "2px"
+      }
+    },
+    "input": {
+      "background":       "#ffffff",
+      "borderColor":      "#dedede",
+      "borderWidth":      "1px",
+      "borderRadius":     "4px",
+      "padding":          "8px 12px",
+      "fontSize":         "16px",
+      "placeholderColor": "#757575",
+      "placeholderStyle": "italic",
+      "focus": {
+        "borderColor": "#1434cb",
+        "borderWidth":  "2px",
+        "outline":     "2px solid #1434cb",
+        "outlineOffset": "2px"
+      }
+    },
+    "card": {
+      "background":   "#ffffff",
+      "border":       "none",
+      "borderRadius": "4px",
+      "padding":      "40px",
+      "shadow":       "card",
+      "featureBackground": "#fff6de",
+      "hover": {
+        "transform": "scale(1.05)"
+      }
+    },
+    "badge": {
+      "background":   "#f5f5f5",
+      "text":         "#1a1a1a",
+      "borderRadius": "1000px",
+      "padding":      "4px 12px",
+      "fontSize":     "12px",
+      "fontWeight":   500
+    },
+    "navbar": {
+      "background":   "#ffffff",
+      "height":       "93px",
+      "borderBottom": "none",
+      "padding":      "16px 48px",
+      "itemColor":    "#1a1a1a",
+      "activeColor":  "#1434cb",
+      "activeStyle":  "underline",
+      "fontSize":     "16px",
+      "fontWeight":   400
+    },
+    "modal": {
+      "background":   "#ffffff",
+      "overlay":      "#000000bf",
+      "borderRadius": "8px",
+      "padding":      "32px",
+      "shadow":       "lg"
+    }
+  },
+
+  "iconography": {
+    "style": "filled",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+  "imagery": {
+    "type":          "photography",
+    "style":         "photography-lifestyle",
+    "humanPresence": "yes-prominent",
+    "borderRadius":  "4px",
+    "aspectRatios":  ["16:9", "4:3", "4:5", "1:1", "9:16"],
+    "treatments":    ["dark overlay", "rounded corners", "scale on hover (1.05)", "parallax effects"],
+    "notes":         "Almost exclusively high-quality lifestyle photography — travel destinations, food, people enjoying experiences. Hero uses a full-bleed travel photo with a person. All feature sections pair real photos with use-case copy (travel benefits, dining, shopping). People are central to nearly every image, depicting aspirational lifestyle moments."
+  },
+
+  "brand": {
+    "tone": ["trustworthy", "professional", "premium", "secure", "accessible"],
+    "visualLanguage": ["light mode primary", "clean flat 2D", "dark hero sections", "pill-shaped buttons", "editorial imagery"],
+    "industry": "Finance",
+    "notes": "Visa uses a proprietary font family (Visa Dialect UI) across all weights. The primary brand blue (#1434cb) is a deep cobalt used consistently for CTAs, links, and interactive states. Buttons are universally pill-shaped (border-radius: 1000px). Headings use lightweight (400) font weights for an editorial, premium feel. The design system includes a complete dark theme via [data-theme=dark]. Section spacing is generous especially on desktop (10rem vertical). Card designs range from sharp-cornered panels (0px radius) to softly rounded feature cards."
+  }
+}

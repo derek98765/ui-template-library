@@ -1,0 +1,282 @@
+{
+  "_meta": {
+    "site": "Bowtie",
+    "url": "https://www.bowtie.com.hk/en",
+    "date": "2026-04-08",
+    "source": ["computed-styles", "css-class-names", "inline-styles", "inferred"],
+    "screenshotPath": "/Users/jester/Downloads/styles-extractor/references/Healthcare/bowtie/bowtie.png",
+    "screenshotError": null
+  },
+
+  "color": {
+    "brand": {
+      "primary": "#FF0068",
+      "secondary": "#B04BFF",
+      "accent": "#125769"
+    },
+    "semantic": {
+      "success": "#02C472",
+      "error": "#FF364D",
+      "warning": "#FF860A",
+      "info": "#1F8CFB"
+    },
+    "neutral": {
+      "50":  "#FAFAFA",
+      "100": "#F5F5F5",
+      "200": "#DDDDDD",
+      "300": "#C2C6D1",
+      "400": "#999999",
+      "500": "#687188",
+      "600": "#555555",
+      "700": "#333333",
+      "800": "#222222",
+      "900": "#191357"
+    },
+    "background": {
+      "page":    "#F6F6F9",
+      "card":    "#FFFFFF",
+      "sidebar": "#FFFFFF",
+      "overlay": "rgba(47, 41, 90, 0.06)"
+    },
+    "text": {
+      "primary":   "#333333",
+      "secondary": "#687188",
+      "muted":     "#999999",
+      "onDark":    "#FFFFFF"
+    },
+    "brand_tints": {
+      "pink50":  "#FFFAFB",
+      "pink100": "#FFF0F6",
+      "pink200": "#FFD9E8",
+      "salmon":  "#F5BAAA"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "Gilroy, 'Noto Sans TC', sans-serif",
+      "body":    "Gilroy, 'Noto Sans TC', sans-serif",
+      "mono":    "monospace"
+    },
+    "fontSizes": {
+      "xs":   "10px",
+      "sm":   "12px",
+      "base": "16px",
+      "md":   "18px",
+      "lg":   "20px",
+      "xl":   "24px",
+      "2xl":  "32px",
+      "3xl":  "40px",
+      "4xl":  "56px"
+    },
+    "fontWeights": {
+      "thin":      100,
+      "light":     300,
+      "regular":   400,
+      "medium":    500,
+      "semibold":  600,
+      "bold":      700,
+      "extrabold": 800,
+      "black":     900
+    },
+    "lineHeights": {
+      "tight":   1.25,
+      "snug":    1.3,
+      "normal":  1.4,
+      "relaxed": 1.5,
+      "loose":   1.75
+    },
+    "letterSpacing": {
+      "tighter": "-0.05em",
+      "tight":   "-0.025em",
+      "normal":  "0",
+      "wide":    "0.025em",
+      "wider":   "0.05em",
+      "widest":  "0.1em"
+    },
+    "headings": {
+      "h1": { "fontSize": "42px", "fontWeight": 700, "lineHeight": 1.25, "letterSpacing": "normal", "color": "#333333" },
+      "h2": { "fontSize": "56px", "fontWeight": 700, "lineHeight": 1.3,  "letterSpacing": "normal", "color": "#FFFFFF" },
+      "h3": { "fontSize": "40px", "fontWeight": 700, "lineHeight": 1.4,  "letterSpacing": "normal", "color": "#333333" },
+      "h4": { "fontSize": "32px", "fontWeight": 700, "lineHeight": 1.4,  "letterSpacing": "normal", "color": "#333333" },
+      "h5": { "fontSize": "24px", "fontWeight": 600, "lineHeight": 1.4,  "letterSpacing": "normal", "color": "#333333" },
+      "h6": { "fontSize": "20px", "fontWeight": 600, "lineHeight": 1.5,  "letterSpacing": "normal", "color": "#333333" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "8px",
+    "scale": {
+      "0":  "0px",
+      "1":  "4px",
+      "2":  "8px",
+      "3":  "12px",
+      "4":  "16px",
+      "5":  "20px",
+      "6":  "24px",
+      "8":  "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px",
+      "20": "80px",
+      "24": "96px"
+    },
+    "containers": {
+      "sm":  "640px",
+      "md":  "768px",
+      "lg":  "992px",
+      "xl":  "1200px",
+      "2xl": "1440px"
+    },
+    "grid": {
+      "columns": 12,
+      "gutter":  "24px",
+      "margin":  "24px"
+    },
+    "sectionPadding": {
+      "vertical":   "80px",
+      "horizontal": "24px"
+    }
+  },
+
+  "border": {
+    "radius": {
+      "none": "0",
+      "sm":   "4px",
+      "base": "6px",
+      "md":   "8px",
+      "lg":   "16px",
+      "xl":   "32px",
+      "2xl":  "36px",
+      "full": "9999px"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px",
+      "thick":  "4px"
+    },
+    "colors": {
+      "default": "#DDDDDD",
+      "muted":   "#C2C6D1",
+      "strong":  "#333333",
+      "focus":   "#FF0068"
+    },
+    "styles": ["solid"]
+  },
+
+  "shadows": {
+    "sm": "rgba(0, 0, 0, 0.2) 0px 2px 13px 0px",
+    "md": "rgba(0, 0, 0, 0.2) 0px 3px 12px 0px",
+    "lg": "rgba(0, 0, 0, 0.1) 0px 10px 20px -5px",
+    "xl": "rgba(0, 0, 0, 0.3) 4px 4px 25px -5px"
+  },
+  "elevation": {
+    "card":     "md",
+    "dropdown": "lg",
+    "modal":    "xl",
+    "tooltip":  "sm"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#FF0068",
+        "text":         "#FFFFFF",
+        "border":       "none",
+        "borderRadius": "50px",
+        "paddingX":     "10px",
+        "paddingY":     "12px",
+        "fontWeight":   400,
+        "fontSize":     "14px"
+      },
+      "secondary": {
+        "background":   "#FFFFFF",
+        "text":         "#FF0068",
+        "border":       "1px solid #FF0068",
+        "borderRadius": "50px",
+        "paddingX":     "50px",
+        "paddingY":     "16px",
+        "fontWeight":   400,
+        "fontSize":     "14px"
+      },
+      "ghost": {
+        "background":   "#FFFFFF",
+        "text":         "#FF0068",
+        "border":       "1px solid #FF0068",
+        "borderRadius": "50px",
+        "paddingX":     "20px",
+        "paddingY":     "8px",
+        "fontWeight":   400,
+        "fontSize":     "14px"
+      },
+      "sizes": {
+        "sm": { "height": "32px", "paddingX": "16px", "fontSize": "12px" },
+        "md": { "height": "40px", "paddingX": "24px", "fontSize": "14px" },
+        "lg": { "height": "48px", "paddingX": "50px", "fontSize": "16px" }
+      }
+    },
+    "input": {
+      "background":       "#FFFFFF",
+      "borderColor":      "#DDDDDD",
+      "borderRadius":     "8px",
+      "padding":          "12px 16px",
+      "fontSize":         "16px",
+      "placeholderColor": "#999999",
+      "focus": {
+        "borderColor": "#FF0068",
+        "ringColor":   "rgba(255, 0, 104, 0.2)",
+        "ringWidth":   "2px"
+      }
+    },
+    "card": {
+      "background":   "#FFFFFF",
+      "border":       "none",
+      "borderRadius": "16px",
+      "padding":      "24px",
+      "shadow":       "md"
+    },
+    "badge": {
+      "background":   "#FFD9E8",
+      "text":         "#FF0068",
+      "borderRadius": "9999px",
+      "padding":      "4px 12px",
+      "fontSize":     "12px",
+      "fontWeight":   500
+    },
+    "navbar": {
+      "background":          "transparent",
+      "backgroundScrolled":  "#FFFFFF",
+      "height":              "114px",
+      "borderBottom":        "none",
+      "itemColor":           "#333333",
+      "activeColor":         "#FF0068",
+      "activeStyle":         "underline"
+    }
+  },
+
+  "iconography": {
+    "style": "outline",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+  "imagery": {
+    "type":          "mixed",
+    "style":         "mixed",
+    "humanPresence": "yes-prominent",
+    "borderRadius":  "16px",
+    "aspectRatios":  ["16:9", "1:1", "4:3"],
+    "treatments":    ["rounded corners", "soft drop shadow", "pink tinted backgrounds"],
+    "notes":         "Real lifestyle photography of people is the primary visual language — families, couples, and professionals shown in warm, approachable contexts. Hero and testimonial sections feature prominent close-up portraits. Feature icons use 2D flat illustration style. A mix of photography for trust-building sections and simple flat icons for product feature explanations."
+  },
+
+  "brand": {
+    "tone":           ["friendly", "trustworthy", "energetic", "clean", "professional"],
+    "visualLanguage": ["light mode", "flat 2D", "soft gradients", "rounded"],
+    "industry":       "Healthcare",
+    "notes":          "Bowtie is a Hong Kong online health insurance company built on Webflow. The design system centers on a vivid hot pink (#FF0068) paired with soft white and light gray backgrounds. A secondary electric purple (#B04BFF) provides contrast. Custom font 'Gilroy' (bold 700) drives all headings. Buttons are exclusively pill-shaped (50px radius). Cards use subtle drop shadows with 16px radius, and brand tint backgrounds (#FFF0F6, #FFD9E8) create warmth throughout the layout."
+  }
+}

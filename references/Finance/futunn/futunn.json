@@ -1,0 +1,311 @@
+{
+  "_meta": {
+    "site": "Futubull (Futunn)",
+    "url": "https://www.futunn.com/en",
+    "date": "2026-04-08",
+    "source": ["css-custom-properties", "computed-styles", "inline-styles"],
+    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Finance/futunn/futunn.png",
+    "screenshotError": null,
+    "notes": "Dual-theme site (light/dark). CSS vars prefixed --cs-* are the primary design system tokens. Dark mode toggled via [data-theme='dark']. Custom font: MiSans (Simple + Semibold). Premium EN sections use BR Hendrix."
+  },
+
+  "color": {
+    "brand": {
+      "primary": "#FF6900",
+      "secondary": "#2B78F5",
+      "accent": "#0053D9"
+    },
+    "semantic": {
+      "success": "#00A870",
+      "error": "#F03A55",
+      "warning": "#BB8D17",
+      "info": "#218DFC"
+    },
+    "neutral": {
+      "50":  "#F2F3F5",
+      "100": "#EBECED",
+      "200": "#E3E4E5",
+      "300": "#D0D0D0",
+      "400": "#999999",
+      "500": "#909499",
+      "600": "#606266",
+      "700": "#3D3C3C",
+      "800": "#1D1F21",
+      "900": "#0F1112"
+    },
+    "background": {
+      "page":    "#FFFFFF",
+      "card":    "#F2F3F5",
+      "sidebar": "#1D1D1D",
+      "overlay": "rgba(0, 0, 0, 0.5)"
+    },
+    "text": {
+      "primary":   "#0F1112",
+      "secondary": "#606266",
+      "muted":     "#999999",
+      "placeholder": "#909499",
+      "onDark":    "#E3E4E5"
+    },
+    "darkMode": {
+      "pageBg":    "#0F1112",
+      "cardBg":    "#1D1D1D",
+      "searchBg":  "#1D1F21",
+      "textPrimary": "#E3E4E5",
+      "textSecondary": "#9B9B9E",
+      "linkBlue":  "#4E7FCE",
+      "hoverBg":   "#2C2F33"
+    },
+    "marketColors": {
+      "us":    "#00A4FF",
+      "hk":    "#A876FB",
+      "sg":    "#F1568F",
+      "au":    "#10845D",
+      "jp":    "#7074F5",
+      "cn":    "#FF5A82",
+      "my":    "#6DA5FF",
+      "fx":    "#7679FB",
+      "crypto": "#FA8F48"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "MiSans Semibold, HelveticaNeue-Bold, Helvetica-Bold, sans-serif",
+      "body":    "MiSans Simple, HelveticaNeue, Helvetica, sans-serif, -apple-system, system-ui",
+      "premium": "BR Hendrix, PingFangSC, PingFangHK, HelveticaNeue, sans-serif, Arial",
+      "mono":    "monospace"
+    },
+    "fontSizes": {
+      "xs":   "12px",
+      "sm":   "13px",
+      "base": "14px",
+      "md":   "16px",
+      "lg":   "18px",
+      "xl":   "20px",
+      "2xl":  "24px",
+      "3xl":  "30px",
+      "4xl":  "36px",
+      "5xl":  "48px"
+    },
+    "fontWeights": {
+      "regular":  400,
+      "semibold": 600,
+      "bold":     700
+    },
+    "lineHeights": {
+      "tight":   1.25,
+      "snug":    1.375,
+      "normal":  1.5,
+      "relaxed": 1.625
+    },
+    "letterSpacing": {
+      "normal": "0",
+      "wide":   "0.025em"
+    },
+    "headings": {
+      "h1": { "fontSize": "48px", "fontWeight": 700, "lineHeight": 1.1, "letterSpacing": "-0.01em", "color": "#FFFFFF" },
+      "h2": { "fontSize": "36px", "fontWeight": 700, "lineHeight": 1.2, "letterSpacing": "0",       "color": "#0F1112" },
+      "h3": { "fontSize": "24px", "fontWeight": 600, "lineHeight": 1.3, "letterSpacing": "0",       "color": "#0F1112" },
+      "h4": { "fontSize": "20px", "fontWeight": 600, "lineHeight": 1.4, "letterSpacing": "0",       "color": "#0F1112" },
+      "h5": { "fontSize": "16px", "fontWeight": 600, "lineHeight": 1.4, "letterSpacing": "0",       "color": "#0F1112" },
+      "h6": { "fontSize": "14px", "fontWeight": 600, "lineHeight": 1.5, "letterSpacing": "0",       "color": "#0F1112" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "4px",
+    "scale": {
+      "0":  "0px",
+      "1":  "4px",
+      "2":  "8px",
+      "3":  "12px",
+      "4":  "16px",
+      "5":  "20px",
+      "6":  "24px",
+      "8":  "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px",
+      "20": "80px",
+      "24": "96px"
+    },
+    "containers": {
+      "sm":  "640px",
+      "md":  "768px",
+      "lg":  "1024px",
+      "xl":  "1240px",
+      "2xl": "1440px",
+      "3xl": "1920px"
+    },
+    "breakpoints": {
+      "mobile":       "767px",
+      "tablet":       "768px",
+      "tabletMax":    "1239px",
+      "desktop":      "1240px",
+      "desktopLarge": "1920px"
+    },
+    "grid": {
+      "columns": 12,
+      "gutter":  "24px",
+      "margin":  "24px"
+    },
+    "sectionPadding": {
+      "vertical":   "80px",
+      "horizontal": "24px"
+    }
+  },
+
+  "border": {
+    "radius": {
+      "none": "0",
+      "sm":   "4px",
+      "base": "6px",
+      "md":   "8px",
+      "lg":   "12px",
+      "xl":   "16px",
+      "full": "100px"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px",
+      "thick":  "4px"
+    },
+    "colors": {
+      "default": "#EBECED",
+      "muted":   "#E3E4E5",
+      "strong":  "#D0D0D0",
+      "focus":   "#2B78F5"
+    },
+    "styles": ["solid"]
+  },
+
+  "shadows": {
+    "sm": "0px 0px 10px 0px rgba(0, 0, 0, 0.12)",
+    "md": "0px 4px 12px 0px rgba(0, 0, 0, 0.15)",
+    "lg": "0px 4px 16px 0px rgba(0, 0, 0, 0.25)",
+    "xl": "0px 4px 16px 0px rgba(0, 0, 0, 0.5)"
+  },
+  "elevation": {
+    "card":     "sm",
+    "dropdown": "md",
+    "modal":    "lg",
+    "tooltip":  "sm"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#FF6900",
+        "text":         "#FFFFFF",
+        "border":       "none",
+        "borderRadius": "100px",
+        "paddingX":     "32px",
+        "paddingY":     "14px",
+        "fontWeight":   600,
+        "fontSize":     "16px",
+        "height":       "52px"
+      },
+      "secondary": {
+        "background":   "#0F1112",
+        "text":         "#FFFFFF",
+        "border":       "none",
+        "borderRadius": "8px",
+        "paddingX":     "20px",
+        "paddingY":     "10px",
+        "fontWeight":   600,
+        "fontSize":     "14px",
+        "height":       "40px"
+      },
+      "ghost": {
+        "background":   "transparent",
+        "text":         "#0F1112",
+        "border":       "1px solid #0F1112",
+        "borderRadius": "8px",
+        "paddingX":     "20px",
+        "paddingY":     "10px",
+        "fontWeight":   400,
+        "fontSize":     "14px",
+        "height":       "40px"
+      },
+      "blue": {
+        "background":   "#0053D9",
+        "text":         "#FFFFFF",
+        "border":       "none",
+        "borderRadius": "8px",
+        "paddingX":     "20px",
+        "paddingY":     "10px",
+        "fontWeight":   600,
+        "fontSize":     "14px"
+      },
+      "sizes": {
+        "sm": { "height": "32px", "paddingX": "14px", "fontSize": "12px" },
+        "md": { "height": "40px", "paddingX": "20px", "fontSize": "14px" },
+        "lg": { "height": "52px", "paddingX": "32px", "fontSize": "16px" }
+      }
+    },
+    "input": {
+      "background":       "#FFFFFF",
+      "borderColor":      "rgba(227, 228, 229, 1)",
+      "borderRadius":     "6px",
+      "padding":          "8px 12px",
+      "fontSize":         "14px",
+      "placeholderColor": "#909499",
+      "focus": {
+        "borderColor": "#696C70",
+        "ringColor":   "#2B78F5",
+        "ringWidth":   "2px"
+      }
+    },
+    "card": {
+      "background":   "#FFFFFF",
+      "border":       "1px solid #EBECED",
+      "borderRadius": "8px",
+      "padding":      "24px",
+      "shadow":       "sm"
+    },
+    "badge": {
+      "background":   "#F2F3F5",
+      "text":         "#606266",
+      "borderRadius": "4px",
+      "padding":      "2px 8px",
+      "fontSize":     "12px",
+      "fontWeight":   400
+    },
+    "navbar": {
+      "background":   "#FFFFFF",
+      "height":       "88px",
+      "borderBottom": "none",
+      "itemColor":    "#0F1112",
+      "itemFontSize": "14px",
+      "itemFontWeight": 400,
+      "activeColor":  "#FF6900",
+      "activeStyle":  "color + underline"
+    }
+  },
+
+  "iconography": {
+    "style": "filled",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+  "imagery": {
+    "type":          "mixed",
+    "style":         "mixed",
+    "humanPresence": "yes-incidental",
+    "borderRadius":  "8px",
+    "aspectRatios":  ["16:9", "4:3", "1:1"],
+    "treatments":    ["dark overlay on hero", "rounded corners on cards", "glowing chart effects"],
+    "notes":         "Predominantly data-dense UI (charts, tables, trading screens). Promo sections include real lifestyle photography of professionals in office/trading contexts. People appear incidentally to add credibility, not as the main visual focus. Some sections use product/trophy imagery with no people."
+  },
+
+  "brand": {
+    "tone":           ["professional", "trustworthy", "energetic", "modern"],
+    "visualLanguage": ["dual light/dark mode", "data-dense", "flat 2D", "orange-accent brand identity"],
+    "industry":       "Finance",
+    "notes":          "Futubull is a stock trading platform (Futu Holdings). Orange (#FF6900) is the dominant brand/action color used for primary CTAs, the logo, and hover states. The hero section uses a dark background with glowing orange financial chart imagery. Body sections are light with white card surfaces. Full dual-theme support — light mode is the default. Custom typeface MiSans (developed by Xiaomi, used across Futu apps for Chinese/English multilingual content). Market-specific accent colors distinguish different exchanges (US, HK, SG, AU, JP, CN, crypto)."
+  }
+}
