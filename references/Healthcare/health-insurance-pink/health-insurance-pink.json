@@ -264,13 +264,9 @@
     }
   },
   "imagery": {
-    "type":          "mixed",
-    "style":         "mixed",
-    "humanPresence": "yes-prominent",
-    "borderRadius":  "16px",
-    "aspectRatios":  ["16:9", "1:1", "4:3"],
-    "treatments":    ["rounded corners", "soft drop shadow", "pink tinted backgrounds"],
-    "notes":         "Real lifestyle photography of people is the primary visual language — families, couples, and professionals shown in warm, approachable contexts. Hero and testimonial sections feature prominent close-up portraits. Feature icons use 2D flat illustration style. A mix of photography for trust-building sections and simple flat icons for product feature explanations."
+    "borderRadius": "16px",
+    "aspectRatios": ["16:9", "1:1", "4:3"],
+    "treatments":   ["rounded corners", "soft drop shadow", "pink tinted backgrounds"]
   },
 
   "brand": {

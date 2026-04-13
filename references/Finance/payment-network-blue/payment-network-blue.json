@@ -362,13 +362,9 @@
     }
   },
   "imagery": {
-    "type":          "photography",
-    "style":         "photography-lifestyle",
-    "humanPresence": "yes-prominent",
-    "borderRadius":  "4px",
-    "aspectRatios":  ["16:9", "4:3", "4:5", "1:1", "9:16"],
-    "treatments":    ["dark overlay", "rounded corners", "scale on hover (1.05)", "parallax effects"],
-    "notes":         "Almost exclusively high-quality lifestyle photography — travel destinations, food, people enjoying experiences. Hero uses a full-bleed travel photo with a person. All feature sections pair real photos with use-case copy (travel benefits, dining, shopping). People are central to nearly every image, depicting aspirational lifestyle moments."
+    "borderRadius": "4px",
+    "aspectRatios": ["16:9", "4:3", "4:5", "1:1", "9:16"],
+    "treatments": ["dark overlay", "rounded corners", "scale on hover (1.05)", "parallax effects"]
   },
 
   "brand": {

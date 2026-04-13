@@ -1,0 +1,323 @@
+{
+  "_meta": {
+    "site": "Dribbble",
+    "url": "https://dribbble.com/",
+    "date": "2026-04-13",
+    "source": ["css-custom-properties", "computed-styles", "inline-styles", "inferred"],
+    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/dribbble/dribbble.png",
+    "screenshotError": null
+  },
+
+  "color": {
+    "brand": {
+      "primary": "#ea4c89",
+      "secondary": "#0d0c22",
+      "accent": "#7b7194"
+    },
+    "semantic": {
+      "success": "hsl(142.8 64.2% 32.9%)",
+      "error": "hsl(0 72.2% 50.6%)",
+      "warning": "hsl(43.3 96.4% 56.3%)",
+      "info": "hsl(217.2 91.2% 59.8%)"
+    },
+    "neutral": {
+      "50":  "#f5f5fa",
+      "100": "#ebebf5",
+      "200": "#e4e4f0",
+      "300": "#d4d4e4",
+      "400": "#c0c0cf",
+      "500": "#72727a",
+      "600": "#5a5a66",
+      "700": "#3d3d4e",
+      "800": "#1e1e2d",
+      "900": "#0d0c22"
+    },
+    "background": {
+      "page":    "#ffffff",
+      "card":    "transparent",
+      "sidebar": "#ffffff",
+      "overlay": "rgba(0, 0, 0, 0.8)"
+    },
+    "text": {
+      "primary":   "#0d0c22",
+      "secondary": "#060318",
+      "muted":     "#9e9ea7",
+      "onDark":    "#ffffff"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "\"Mona Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "body":    "\"Mona Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "mono":    "\"IBM Plex Mono\", monospace"
+    },
+    "loadedFonts": [
+      "Mona Sans",
+      "IBM Plex Mono",
+      "Source Serif 4",
+      "WF Visual Sans",
+      "Inter Regular",
+      "Inter Semibold",
+      "Walsheim"
+    ],
+    "fontSizes": {
+      "xs":   "12px",
+      "sm":   "13px",
+      "base": "14px",
+      "md":   "16px",
+      "lg":   "18px",
+      "xl":   "24px",
+      "2xl":  "30px",
+      "3xl":  "36px",
+      "4xl":  "48px"
+    },
+    "fontWeights": {
+      "thin":      100,
+      "light":     300,
+      "regular":   400,
+      "medium":    500,
+      "semibold":  600,
+      "bold":      700,
+      "extrabold": 800,
+      "black":     900
+    },
+    "lineHeights": {
+      "tight":   1.08,
+      "snug":    1.25,
+      "normal":  1.5,
+      "relaxed": 1.75,
+      "loose":   2.0
+    },
+    "letterSpacing": {
+      "tighter": "-0.05em",
+      "tight":   "-0.025em",
+      "normal":  "0",
+      "wide":    "0.025em",
+      "wider":   "0.05em",
+      "widest":  "0.1em"
+    },
+    "headings": {
+      "h1": { "fontSize": "48px",  "fontWeight": 600, "lineHeight": 1.08, "letterSpacing": "normal", "color": "#0d0c22" },
+      "h2": { "fontSize": "36px",  "fontWeight": 600, "lineHeight": 1.2,  "letterSpacing": "normal", "color": "#0d0c22" },
+      "h3": { "fontSize": "24px",  "fontWeight": 600, "lineHeight": 1.3,  "letterSpacing": "normal", "color": "#0d0c22" },
+      "h4": { "fontSize": "18px",  "fontWeight": 600, "lineHeight": 1.4,  "letterSpacing": "normal", "color": "#0d0c22" },
+      "h5": { "fontSize": "16px",  "fontWeight": 600, "lineHeight": 1.5,  "letterSpacing": "normal", "color": "#0d0c22" },
+      "h6": { "fontSize": "14px",  "fontWeight": 600, "lineHeight": 1.5,  "letterSpacing": "normal", "color": "#0d0c22" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "8px",
+    "scale": {
+      "0":  "0px",
+      "1":  "4px",
+      "2":  "8px",
+      "3":  "12px",
+      "4":  "16px",
+      "5":  "20px",
+      "6":  "24px",
+      "8":  "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px",
+      "18": "72px",
+      "20": "80px"
+    },
+    "containers": {
+      "sm":  "640px",
+      "md":  "768px",
+      "lg":  "1024px",
+      "xl":  "1280px",
+      "2xl": "1440px"
+    },
+    "grid": {
+      "columns": 4,
+      "gutter":  "24px",
+      "margin":  "40px",
+      "layout":  "masonry"
+    },
+    "sectionPadding": {
+      "vertical":   "72px",
+      "horizontal": "40px"
+    }
+  },
+
+  "border": {
+    "radius": {
+      "none": "0px",
+      "sm":   "4px",
+      "base": "8px",
+      "md":   "12px",
+      "lg":   "16px",
+      "xl":   "24px",
+      "full": "9999px",
+      "circle": "50%"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px",
+      "thick":  "4px"
+    },
+    "colors": {
+      "default": "#0d0c22",
+      "muted":   "#e4e4f0",
+      "strong":  "#060318",
+      "focus":   "#ea4c89"
+    },
+    "styles": ["solid"]
+  },
+
+  "shadows": {
+    "sm": "0 1px 2px rgba(0,0,0,0.05)",
+    "md": "0 4px 6px rgba(0,0,0,0.07)",
+    "lg": "0 10px 20px rgba(0,0,0,0.10)",
+    "xl": "0 20px 40px rgba(0,0,0,0.15)"
+  },
+  "elevation": {
+    "card":     "none",
+    "dropdown": "md",
+    "modal":    "lg",
+    "tooltip":  "sm"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#0d0c22",
+        "text":         "#ffffff",
+        "border":       "1px solid #0d0c22",
+        "borderRadius": "9999px",
+        "paddingX":     "20px",
+        "paddingY":     "0px",
+        "height":       "40px",
+        "fontWeight":   600,
+        "fontSize":     "13px",
+        "hover": {
+          "background": "#3d3d4e",
+          "border":     "1px solid #3d3d4e"
+        }
+      },
+      "secondary": {
+        "background":   "#ffffff",
+        "text":         "#0d0c22",
+        "border":       "1px solid #e4e4f0",
+        "borderRadius": "9999px",
+        "paddingX":     "20px",
+        "paddingY":     "0px",
+        "height":       "40px",
+        "fontWeight":   600,
+        "fontSize":     "13px"
+      },
+      "ghost": {
+        "background":   "transparent",
+        "text":         "#0d0c22",
+        "border":       "1px solid #e4e4f0",
+        "borderRadius": "9999px",
+        "paddingX":     "20px",
+        "paddingY":     "0px",
+        "height":       "40px",
+        "fontWeight":   500,
+        "fontSize":     "14px"
+      },
+      "accent": {
+        "background":   "#ea4c89",
+        "text":         "#ffffff",
+        "border":       "1px solid #ea4c89",
+        "borderRadius": "50%",
+        "fontWeight":   600,
+        "fontSize":     "13px",
+        "note":         "Circle icon button variant"
+      },
+      "sizes": {
+        "sm": { "height": "32px", "paddingX": "12px", "fontSize": "12px" },
+        "md": { "height": "40px", "paddingX": "20px", "fontSize": "13px" },
+        "lg": { "height": "48px", "paddingX": "28px", "fontSize": "14px" }
+      }
+    },
+    "input": {
+      "background":       "#ffffff",
+      "borderColor":      "#e4e4f0",
+      "borderRadius":     "8px",
+      "padding":          "8px 12px",
+      "fontSize":         "14px",
+      "placeholderColor": "hsl(240 3.8% 46.1%)",
+      "focus": {
+        "borderColor": "#ea4c89",
+        "ringColor":   "#ea4c89",
+        "ringWidth":   "2px"
+      }
+    },
+    "card": {
+      "background":   "#ffffff",
+      "border":       "none",
+      "borderRadius": "8px",
+      "padding":      "0px",
+      "shadow":       "none",
+      "note":         "Shot thumbnails are image-only; hover reveals overlay with likes/views"
+    },
+    "badge": {
+      "background":   "#ea4c89",
+      "text":         "#ffffff",
+      "borderRadius": "9999px",
+      "padding":      "2px 8px",
+      "fontSize":     "12px",
+      "fontWeight":   500
+    },
+    "navbar": {
+      "background":   "transparent",
+      "height":       "92px",
+      "borderBottom": "none",
+      "itemColor":    "#060318",
+      "itemFontSize": "14px",
+      "itemFontWeight": 600,
+      "activeColor":  "#ea4c89",
+      "hoverColor":   "#7b7194",
+      "activeStyle":  "color change to pink"
+    }
+  },
+
+  "iconography": {
+    "style": "outline",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+  "imagery": {
+    "borderRadius": "8px",
+    "aspectRatios": ["4:3", "1:1", "16:9"],
+    "treatments":   ["dark overlay on hover", "rounded corners", "image-fill cards"]
+  },
+
+  "brand": {
+    "tone":           ["creative", "vibrant", "playful", "community-driven", "aspirational"],
+    "visualLanguage": ["light mode", "flat 2D", "colorful", "masonry grid", "image-forward"],
+    "industry":       "Creative",
+    "notes":          "Dribbble uses a near-black (#0d0c22) + hot pink (#ea4c89) brand palette. The font is 'Mona Sans' (GitHub's variable font). The site relies on a 4-column masonry grid of shot thumbnails — design is deliberately minimal to let user work shine. Pill-shaped buttons (border-radius: 9999px) are a signature element. The Shoelace web component library underpins many UI components with a comprehensive --sl-color-* token system. Hover states reveal muted purple (#7b7194) on nav links."
+  },
+
+  "cssVariables": {
+    "site": {
+      "--btn-bg-color": "#0d0c22",
+      "--btn-bg-color-hover": "#3d3d4e",
+      "--btn-text-color": "#fff",
+      "--btn-text-color-hover": "#fff",
+      "--btn-border-color": "#0d0c22",
+      "--btn-border-color-hover": "#3d3d4e",
+      "--btn-height": "40px",
+      "--btn-font-size": "13px",
+      "--btn-padding": "20px",
+      "--btn-icon-size": "16px",
+      "--site-nav-height": "92px",
+      "--site-nav-gutter": "40px",
+      "--site-nav-search-height": "56px",
+      "--site-nav-link-hover-color": "#7b7194",
+      "--banner-gutter": "72px",
+      "--input-padding-left": "12px",
+      "--input-padding-right": "12px"
+    }
+  }
+}

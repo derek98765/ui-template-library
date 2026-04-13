@@ -293,13 +293,9 @@
     }
   },
   "imagery": {
-    "type":          "mixed",
-    "style":         "mixed",
-    "humanPresence": "yes-incidental",
-    "borderRadius":  "8px",
-    "aspectRatios":  ["16:9", "4:3", "1:1"],
-    "treatments":    ["dark overlay on hero", "rounded corners on cards", "glowing chart effects"],
-    "notes":         "Predominantly data-dense UI (charts, tables, trading screens). Promo sections include real lifestyle photography of professionals in office/trading contexts. People appear incidentally to add credibility, not as the main visual focus. Some sections use product/trophy imagery with no people."
+    "borderRadius": "8px",
+    "aspectRatios": ["16:9", "4:3", "1:1"],
+    "treatments":   ["dark overlay on hero", "rounded corners on cards", "glowing chart effects"]
   },
 
   "brand": {

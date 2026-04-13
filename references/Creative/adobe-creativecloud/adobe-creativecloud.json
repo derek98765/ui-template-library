@@ -1,0 +1,485 @@
+{
+  "_meta": {
+    "site": "Adobe Creative Cloud",
+    "url": "https://www.adobe.com/creativecloud.html",
+    "date": "2026-04-13",
+    "source": ["css-custom-properties", "computed-styles", "inferred"],
+    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/adobe-creativecloud/adobe-creativecloud.png",
+    "screenshotError": null
+  },
+
+  "color": {
+    "brand": {
+      "primary":   "#eb1000",
+      "secondary": "#3b63fb",
+      "accent":    "#274dea"
+    },
+    "semantic": {
+      "success": "#05834e",
+      "error":   "#eb1000",
+      "warning": "#f5c700",
+      "info":    "#1473e6"
+    },
+    "neutral": {
+      "50":  "#ffffff",
+      "100": "#f8f8f8",
+      "200": "#e8e8e8",
+      "300": "#d5d5d5",
+      "400": "#b8b8b8",
+      "500": "#909090",
+      "600": "#6d6d6d",
+      "700": "#505050",
+      "800": "#2c2c2c",
+      "900": "#131313"
+    },
+    "background": {
+      "page":    "#ffffff",
+      "card":    "#eaeaea",
+      "sidebar": "#f8f8f8",
+      "overlay": "rgba(0, 0, 0, 0.8)"
+    },
+    "text": {
+      "primary":   "#2c2c2c",
+      "secondary": "#505050",
+      "muted":     "#6d6d6d",
+      "subtle":    "#909090",
+      "onDark":    "#ffffff",
+      "link":      "#274dea"
+    }
+  },
+
+  "colorPalette": {
+    "spectrum": {
+      "gray-50":  "#ffffff",
+      "gray-200": "#e6e6e6",
+      "gray-300": "#d5d5d5",
+      "gray-400": "#b8b8b8",
+      "gray-500": "#909090",
+      "gray-600": "#6d6d6d",
+      "gray-700": "#505050",
+      "gray-800": "#2c2c2c"
+    },
+    "semantic": {
+      "red-700":    "#eb1000",
+      "green-900":  "#05834e",
+      "yellow-300": "#f5c700",
+      "indigo-300": "#d3d5ff",
+      "indigo-900": "#5258e4"
+    },
+    "merch": {
+      "error-bg":     "#ffebe8",
+      "red-promo":    "#d31510",
+      "green-promo":  "#05834e",
+      "focus-ring":   "#1473e6",
+      "grey-50":      "#ffffff",
+      "grey-10":      "#f6f6f6",
+      "grey-600":     "#686868",
+      "grey-700":     "#464646",
+      "grey-800":     "#222222"
+    },
+    "feds": {
+      "adobeBrand":    "#eb1000",
+      "ctaPrimary":    "#3b63fb",
+      "ctaPrimaryHover": "#274dea",
+      "blueLink":      "#274dea",
+      "signIn":        "#4b4b4b",
+      "headline":      "#505050"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "body":    "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "ui":      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "mono":    "\"Roboto Mono\", menlo, consolas, \"Liberation Mono\", monospace"
+    },
+    "fontSizes": {
+      "xs":   "12px",
+      "sm":   "14px",
+      "base": "16px",
+      "md":   "18px",
+      "lg":   "20px",
+      "xl":   "22px",
+      "2xl":  "24px",
+      "3xl":  "28px",
+      "4xl":  "44px",
+      "5xl":  "55px",
+      "6xl":  "80px"
+    },
+    "typeSizeTokens": {
+      "--type-body-xxs-size": "12px",
+      "--type-body-xs-size":  "14px",
+      "--type-body-s-size":   "16px",
+      "--type-body-m-size":   "18px",
+      "--type-body-l-size":   "20px",
+      "--type-body-xl-size":  "22px",
+      "--type-body-xxl-size": "28px",
+      "--type-heading-xs-size":   "18px",
+      "--type-heading-s-size":    "20px",
+      "--type-heading-m-size":    "24px",
+      "--type-heading-l-size":    "28px",
+      "--type-heading-xl-size":   "36px",
+      "--type-heading-xxl-size":  "44px",
+      "--type-heading-xxxl-size": "80px",
+      "--type-detail-s-size":  "10px",
+      "--type-detail-l-size":  "16px",
+      "--type-detail-xl-size": "20px",
+      "--type-lockup-xxs-size": "11px",
+      "--type-lockup-xs-size":  "16px",
+      "--type-lockup-s-size":   "22px",
+      "--type-lockup-m-size":   "27px",
+      "--type-lockup-l-size":   "38px",
+      "--type-lockup-xl-size":  "44px",
+      "--type-lockup-xxl-size": "55px"
+    },
+    "lineHeightTokens": {
+      "--type-body-xxs-lh":   "18px",
+      "--type-body-xs-lh":    "21px",
+      "--type-body-s-lh":     "24px",
+      "--type-body-m-lh":     "27px",
+      "--type-body-l-lh":     "30px",
+      "--type-body-xl-lh":    "33px",
+      "--type-body-xxl-lh":   "42px",
+      "--type-heading-xs-lh": "22.5px",
+      "--type-heading-s-lh":  "25px",
+      "--type-heading-l-lh":  "35px",
+      "--type-heading-xxl-lh":"55px",
+      "--type-heading-xxxl-lh":"88px",
+      "--type-heading-base-lh": "1.2",
+      "--type-detail-l-lh":   "20px",
+      "--type-detail-s-lh":   "12px",
+      "--type-detail-xl-lh":  "25px"
+    },
+    "fontWeights": {
+      "regular":  400,
+      "medium":   500,
+      "semibold": 600,
+      "bold":     700,
+      "extrabold":800
+    },
+    "lineHeights": {
+      "tight":   1.1,
+      "snug":    1.2,
+      "normal":  1.5,
+      "relaxed": 1.625
+    },
+    "letterSpacing": {
+      "tightest": "-0.02em",
+      "tight":    "-0.01em",
+      "normal":   "0",
+      "wide":     "0.025em"
+    },
+    "headings": {
+      "h1": { "fontSize": "80px", "fontWeight": 800, "lineHeight": "88px", "letterSpacing": "normal", "color": "#ffffff", "note": "On dark hero background" },
+      "h2": { "fontSize": "44px", "fontWeight": 800, "lineHeight": "55px", "letterSpacing": "normal", "color": "#2c2c2c" },
+      "h3": { "fontSize": "24px", "fontWeight": 800, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#2c2c2c" },
+      "h4": { "fontSize": "20px", "fontWeight": 700, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#2c2c2c" },
+      "h5": { "fontSize": "18px", "fontWeight": 700, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#2c2c2c" },
+      "h6": { "fontSize": "16px", "fontWeight": 700, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#2c2c2c" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "8px",
+    "scale": {
+      "0":  "0px",
+      "1":  "4px",
+      "2":  "8px",
+      "3":  "16px",
+      "4":  "24px",
+      "5":  "32px",
+      "6":  "40px",
+      "7":  "48px",
+      "8":  "56px",
+      "10": "80px",
+      "13": "104px"
+    },
+    "spacingTokens": {
+      "--spacing-xxs":       "8px",
+      "--spacing-xs":        "16px",
+      "--spacing-m":         "32px",
+      "--spacing-l":         "40px",
+      "--spacing-l-static":  "48px",
+      "--spacing-xl":        "56px",
+      "--spacing-xl-static": "56px",
+      "--spacing-xxl-static":"80px",
+      "--spacing-xxxl-static":"104px",
+      "--consonant-merch-spacing-xxxs": "4px",
+      "--consonant-merch-spacing-xxs":  "8px",
+      "--consonant-merch-spacing-xs":   "16px",
+      "--consonant-merch-spacing-s":    "24px"
+    },
+    "containers": {
+      "sm":  "640px",
+      "md":  "1024px",
+      "lg":  "1200px",
+      "xl":  "1440px"
+    },
+    "grid": {
+      "columns":     12,
+      "columnWidth": "100px",
+      "maxWidth":    "1200px",
+      "navMaxWidth": "1440px"
+    },
+    "sectionPadding": {
+      "vertical":   "80px",
+      "horizontal": "24px"
+    }
+  },
+
+  "border": {
+    "radius": {
+      "none": "0px",
+      "sm":   "4px",
+      "base": "8px",
+      "lg":   "16px",
+      "full": "50%"
+    },
+    "radiusTokens": {
+      "--s-rounded-corners":    "4px",
+      "--m-rounded-corners":    "8px",
+      "--l-rounded-corners":    "16px",
+      "--full-rounded-corners": "50%",
+      "--feds-radius-utilityIcon": "4px"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px"
+    },
+    "colors": {
+      "default":  "#e9e9e9",
+      "muted":    "#eaeaea",
+      "nav":      "#e1e1e1",
+      "outline":  "#dadada",
+      "focus":    "#1473e6",
+      "error":    "#eb1000"
+    }
+  },
+
+  "shadows": {
+    "sm": "0 1px 4px rgba(0,0,0,0.1)",
+    "md": "0 4px 12px rgba(0,0,0,0.12)",
+    "lg": "0 8px 24px rgba(0,0,0,0.15)",
+    "note": "No explicit shadow tokens found; inferred from visual design patterns"
+  },
+  "elevation": {
+    "card":     "sm",
+    "dropdown": "lg",
+    "modal":    "lg",
+    "tooltip":  "sm"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#3b63fb",
+        "text":         "#ffffff",
+        "border":       "2px solid #3b63fb",
+        "borderRadius": "16px",
+        "paddingX":     "14px",
+        "height":       "auto",
+        "fontWeight":   700,
+        "fontSize":     "15px",
+        "hover": { "background": "#274dea" }
+      },
+      "ghost": {
+        "background":   "transparent",
+        "text":         "#292929",
+        "border":       "2px solid #dadada",
+        "borderRadius": "16px",
+        "paddingX":     "14px",
+        "fontSize":     "14px",
+        "fontWeight":   600
+      },
+      "sizes": {
+        "sm": { "height": "32px", "paddingX": "12px", "fontSize": "13px" },
+        "md": { "height": "40px", "paddingX": "14px", "fontSize": "15px" },
+        "lg": { "height": "48px", "paddingX": "24px", "fontSize": "16px" }
+      }
+    },
+    "input": {
+      "background":       "#ffffff",
+      "borderColor":      "#909090",
+      "borderRadius":     "4px",
+      "padding":          "8px 12px",
+      "fontSize":         "16px",
+      "placeholderColor": "#909090",
+      "focus": {
+        "borderColor": "#1473e6",
+        "ringColor":   "#1473e6",
+        "ringWidth":   "2px"
+      },
+      "error": {
+        "borderColor": "#eb1000"
+      }
+    },
+    "card": {
+      "background":   "#eaeaea",
+      "border":       "1px solid #e9e9e9",
+      "borderRadius": "8px",
+      "padding":      "0px",
+      "shadow":       "none",
+      "note":         "Editorial cards use 16px radius (--l-rounded-corners); pricing merch-cards use 8px radius"
+    },
+    "badge": {
+      "borderRadius": "4px",
+      "padding":      "2px 8px",
+      "fontSize":     "12px",
+      "fontWeight":   700
+    },
+    "navbar": {
+      "background":      "#f8f8f8",
+      "height":          "97px",
+      "navWrapperHeight":"63px",
+      "breadcrumbHeight":"33px",
+      "borderBottom":    "none",
+      "itemColor":       "#2c2c2c",
+      "itemFontSize":    "14px",
+      "itemFontWeight":  400,
+      "activeColor":     "#274dea",
+      "hoverBg":         "#e9e9e9",
+      "maxWidth":        "1440px"
+    }
+  },
+
+  "iconography": {
+    "style": "filled",
+    "sizes": {
+      "s":   "32px",
+      "m":   "40px",
+      "l":   "56px",
+      "xl":  "64px",
+      "xxl": "80px"
+    },
+    "sizeTokens": {
+      "--icon-size-s":   "32px",
+      "--icon-size-m":   "40px",
+      "--icon-size-l":   "56px",
+      "--icon-size-xl":  "64px",
+      "--icon-size-xxl": "80px"
+    }
+  },
+  "imagery": {
+    "borderRadius": "16px",
+    "aspectRatios": ["16:9", "4:3", "1:1", "9:16"],
+    "treatments":   ["rounded corners (16px)", "dark hero overlay", "gradient text backgrounds", "app icon grids"]
+  },
+
+  "brand": {
+    "tone":           ["professional", "bold", "creative", "premium", "editorial"],
+    "visualLanguage": ["mixed mode (dark hero + light body)", "bold 800-weight headings", "Adobe red corporate brand", "CTA blue action color", "12-column 1200px grid", "card-based app showcase"],
+    "industry":       "Creative",
+    "notes":          "Adobe Creative Cloud uses the proprietary 'Adobe Clean' font (also aliased as 'adobe-clean') across all text. Headings are extremely bold (800 weight) at large scales up to 80px. The corporate brand color is Adobe red (#eb1000), but primary CTAs and links use a vivid blue (#3b63fb / #274dea). The page uses a mixed dark/light layout: a black hero section, then a white body. Border-radius on CTAs is 16px (--l-rounded-corners) — notably more rectangular than pill-style. The design system namespace includes: --type-* (full typography scale), --consonant-merch-* (commerce/pricing component tokens), --feds-* (global nav/footer tokens), --spectrum-* (Adobe Spectrum color system), --spacing-* (spacing scale), --merch-color-* (commerce semantic colors). Grid max-width is 1200px (12 columns of 100px each); nav/footer max-width is 1440px."
+  },
+
+  "cssVariables": {
+    "typography": {
+      "--type-heading-all-weight": "700",
+      "--type-detail-all-weight":  "700",
+      "--type-heading-xxxl-size":  "80px",
+      "--type-heading-xxl-size":   "44px",
+      "--type-heading-xl-size":    "36px",
+      "--type-heading-l-size":     "28px",
+      "--type-heading-m-size":     "24px",
+      "--type-heading-s-size":     "20px",
+      "--type-heading-xs-size":    "18px",
+      "--type-heading-xxxl-lh":    "88px",
+      "--type-heading-xxl-lh":     "55px",
+      "--type-heading-base-lh":    "1.2",
+      "--type-body-xxl-size":      "28px",
+      "--type-body-xl-size":       "22px",
+      "--type-body-l-size":        "20px",
+      "--type-body-s-size":        "16px",
+      "--type-body-xs-size":       "14px",
+      "--type-body-xxs-size":      "12px",
+      "--type-lockup-xxl-size":    "55px",
+      "--type-lockup-xl-size":     "44px",
+      "--type-lockup-l-size":      "38px",
+      "--type-lockup-m-size":      "27px",
+      "--type-lockup-s-size":      "22px",
+      "--type-lockup-xs-size":     "16px",
+      "--type-lockup-xxs-size":    "11px",
+      "--body-font-family":        "'Adobe Clean', adobe-clean, 'Trebuchet MS', sans-serif",
+      "--merch-body-font-family":  "'Adobe Clean', adobe-clean, 'Trebuchet MS', sans-serif",
+      "--fixed-font-family":       "'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace"
+    },
+    "colors": {
+      "--color-white":               "#ffffff",
+      "--color-gray-100":            "#f8f8f8",
+      "--color-gray-200":            "#e8e8e8",
+      "--color-gray-500":            "#909090",
+      "--color-gray-600":            "#686868",
+      "--color-gray-800":            "#242424",
+      "--color-brand-title":         "#000b1d",
+      "--color-accent-hover":        "rgb(39,77,234)",
+      "--color-accent-down":         "#095aba",
+      "--color-accent-focus-ring":   "#378ef0",
+      "--color-info-accent-light":   "#dedef9",
+      "--color-info-accent-hover":   "#4646c6",
+      "--color-info-accent-down":    "#3d3db4",
+      "--link-color":                "rgb(39,77,234)",
+      "--link-hover-color":          "rgb(29,62,207)",
+      "--background-color":          "#ffffff",
+      "--spectrum-red-700":          "#eb1000",
+      "--spectrum-gray-200":         "#e6e6e6",
+      "--spectrum-gray-300":         "#d5d5d5",
+      "--spectrum-gray-400":         "#b8b8b8",
+      "--spectrum-gray-500":         "#909090",
+      "--spectrum-gray-600":         "#6d6d6d",
+      "--spectrum-gray-800":         "#2c2c2c",
+      "--spectrum-green-900":        "#05834e",
+      "--spectrum-yellow-300":       "#f5c700",
+      "--spectrum-indigo-300":       "#d3d5ff",
+      "--spectrum-indigo-900":       "#5258e4",
+      "--feds-color-adobeBrand":     "#eb1000",
+      "--feds-cta-primary-bg":       "#3b63fb",
+      "--feds-cta-primary-bg--hover":"#274dea",
+      "--feds-color-blue-link":      "#274dea",
+      "--feds-color-headline":       "#505050",
+      "--feds-color-signIn":         "#4b4b4b",
+      "--feds-color-link-dark":      "#dbdbdb",
+      "--feds-background-footer":    "#fafafa",
+      "--feds-background-promo--dark":"#000000",
+      "--merch-color-error-background":"#ffebe8",
+      "--merch-color-red-promo":     "#d31510",
+      "--merch-color-green-promo":   "#05834e",
+      "--merch-color-focus-ring":    "#1473e6",
+      "--modal-focus-color":         "#109cde",
+      "--tabs-active-color":         "#1473e6",
+      "--fuchsia":                   "#fde9ff"
+    },
+    "spacing": {
+      "--spacing-xxs":        "8px",
+      "--spacing-xs":         "16px",
+      "--spacing-m":          "32px",
+      "--spacing-l":          "40px",
+      "--spacing-l-static":   "48px",
+      "--spacing-xl":         "56px",
+      "--spacing-xl-static":  "56px",
+      "--spacing-xxl-static": "80px",
+      "--spacing-xxxl-static":"104px",
+      "--feds-gutter":        "8px",
+      "--feds-gutter-footer": "32px"
+    },
+    "radius": {
+      "--s-rounded-corners":     "4px",
+      "--m-rounded-corners":     "8px",
+      "--l-rounded-corners":     "16px",
+      "--full-rounded-corners":  "50%",
+      "--feds-radius-utilityIcon": "4px"
+    },
+    "layout": {
+      "--grid-column-width":    "100px",
+      "--feds-maxWidth-nav":    "1440px",
+      "--feds-minWidth-menu":   "1200px",
+      "--feds-totalheight-nav": "96px",
+      "--feds-height-breadcrumbs": "33px",
+      "--feds-localnav-height": "40px",
+      "--modal-z-index":        "102",
+      "--modal-z-index-curtain":"101",
+      "--jarvis-z-index-override": "100",
+      "--app-banner-height":    "76px"
+    }
+  }
+}

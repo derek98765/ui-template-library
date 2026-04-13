@@ -298,13 +298,9 @@
     }
   },
   "imagery": {
-    "type":          "mixed",
-    "style":         "mixed",
-    "humanPresence": "yes-prominent",
-    "borderRadius":  "10px",
-    "aspectRatios":  ["16:9", "4:3", "1:1"],
-    "treatments":    ["drop-shadow", "gradient overlay", "bottom-rounded sections (0px 0px 24px 24px)"],
-    "notes":         "Hero section uses real lifestyle photography of business people (prominent, full-width). Feature sections use 2D flat icons and app UI screenshots. A mix of photography in hero/promos and flat illustration-style icons throughout."
+    "borderRadius": "10px",
+    "aspectRatios": ["16:9", "4:3", "1:1"],
+    "treatments": ["drop-shadow", "gradient overlay", "bottom-rounded sections (0px 0px 24px 24px)"]
   },
 
   "brand": {

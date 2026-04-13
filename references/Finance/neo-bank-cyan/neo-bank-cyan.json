@@ -329,13 +329,9 @@
     }
   },
   "imagery": {
-    "type":          "mixed",
-    "style":         "mixed",
-    "humanPresence": "no",
-    "borderRadius":  "24px",
-    "aspectRatios":  ["16:9", "4:3", "1:1", "4:5", "9:16"],
-    "treatments":    ["drop-shadow with cyan tint", "scale on hover", "dark overlay", "gradient overlays"],
-    "notes":         "Feature sections use 3D-clay style renders of the phone/card product. Abstract geometric 3D shapes and neon gradient blobs used as decorative elements. No real people depicted anywhere; brand relies on product and abstract visual language exclusively."
+    "borderRadius": "24px",
+    "aspectRatios": ["16:9", "4:3", "1:1", "4:5", "9:16"],
+    "treatments": ["drop-shadow with cyan tint", "scale on hover", "dark overlay", "gradient overlays"]
   },
 
   "brand": {

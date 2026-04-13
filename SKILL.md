@@ -1,7 +1,7 @@
 ---
 name: ui-template-library
 description: >
-  Generate a production-ready HTML/CSS website or app UI from a curated library of real-world design systems. Trigger when the user wants to build, design, or generate a webpage, landing page, dashboard, app screen, or any UI — especially for industries like finance, banking, healthcare, insurance, e-commerce, or SaaS. Automatically picks the closest reference template, loads its design tokens and screenshot, applies any user style overrides (font, color, etc.), and outputs a complete single-file HTML page styled to look like a real product. Includes Chart.js charts styled to match the template for data-heavy pages like dashboards and finance apps.
+  Generate a production-ready HTML/CSS website or app UI from a curated library of real-world design systems. Trigger when the user wants to build, design, or generate a website, landing page, dashboard, app screen, or any UI. Automatically picks the closest reference template, loads its design tokens and screenshot, applies any user style overrides (font, color, etc.), and outputs a complete single-file HTML page styled to look like a real product. Includes Chart.js charts styled to match the template for data-heavy pages like dashboards and finance apps.
 ---
 
 # UI Design Library Skill
@@ -11,34 +11,154 @@ Generate production-ready HTML/CSS pages styled from a curated reference library
 
 ---
 
-## Step 1 — Understand the Request
+## Global Constraints
 
-Read the user's requirement carefully. Extract:
-- **What** they want to build (landing page, dashboard, app screen, form, etc.)
-- **The industry or domain** (finance, healthcare, e-commerce, SaaS, creative, etc.)
-- **Any explicit style overrides** the user mentioned (e.g. a specific font, a colour, a radius style)
+Constraint: All user-facing communication must use point-form or numbered lists. Use at most one sentence for introductory context; all other details must be bulleted.
 
-Keep a mental note of overrides — they take precedence over the template later.
+Constraint: Never expose which reference template or brand was used. The selection is internal and must not be mentioned to the user under any condition.
+
+Constraint: Never use emoji anywhere — not in user-facing messages and not in the generated HTML.
+
+Constraint: Do not skip steps. Do not proceed to a later step until the current step is complete and its conditions are met.
+
+Constraint: Do not generate HTML until STATE_READY is reached.
 
 ---
 
-## Step 2 — Pick the Right Template
+## State Model
 
-### Available industry → template mapping
+- STATE_NONE — no usable input extracted
+- STATE_PARTIAL — input is incomplete, unclear, or fails quality threshold
+- STATE_COMPLETE — all required fields are present
+- STATE_READY — all fields are valid and pass quality gate
+- STATE_CONFIRMED — user has confirmed the output mode
+- STATE_BUILT — HTML/CSS has been generated
+- STATE_VALIDATED — generated output has passed validation against the reference
+- STATE_DELIVERED — output has been delivered to the user
+- STATE_ERROR — unrecoverable failure
 
-Scan the `references/` directory structure:
+---
+
+## Required Fields
+
+- `page_type`: What to build (e.g. landing page, dashboard, app screen, form, pricing page)
+- `industry`: The domain or sector (e.g. finance, healthcare, e-commerce, SaaS)
+
+Optional fields (applied as overrides if present):
+- `output_mode`: How to deliver the result (`file` for raw HTML download, `upload` for live preview on foragentminds.com). Defaults to `upload` if not specified.
+- `font`: Custom font family requested by the user
+- `color`: Custom primary color
+- `radius_style`: `sharp`, `rounded`, or `pill`
+- `mode`: `light` or `dark`
+
+---
+
+## Step 1 — Extract Input
+
+Parse the user's message. Extract:
+- `page_type`
+- `industry`
+- `output_mode` (default to `upload` if not specified)
+- Any optional overrides
+
+Store all extracted values in working state.
+
+---
+
+## Step 2 — Validate Fields
+
+Classify each required field as one of:
+- `valid` — present and unambiguous
+- `missing` — not provided
+- `unclear` — present but too vague to act on
+
+---
+
+## Step 2.5 — Quality Gate
+
+Evaluate input quality. If inputs are too vague to produce a meaningful, professional result:
+- Remain in STATE_PARTIAL
+- Request specific refinement — do not proceed
+
+Examples of inputs that fail the quality gate:
+- `page_type: "a website"` (no specificity)
+- `industry: "something general"` (no identifiable domain)
+
+---
+
+## Step 3 — Classify State
+
+- STATE_NONE: no usable input at all
+- STATE_PARTIAL: one or more required fields are missing, unclear, or fail quality gate
+- STATE_COMPLETE: all required fields are present
+- STATE_READY: all required fields are valid and pass quality gate
+
+---
+
+## Step 4 — Response Logic
+
+### STATE_NONE
+Ask for all required fields.
+
+### STATE_PARTIAL
+- List confirmed fields
+- Ask only for missing, unclear, or weak fields
+- Do not repeat confirmed fields
+- Do not proceed
+
+### STATE_COMPLETE
+Pass through Quality Gate (Step 2.5). If it fails, return to STATE_PARTIAL.
+
+### STATE_READY
+Proceed to Step 5.
+
+---
+
+## Step 5 — Confirm Output Mode
+
+Before generating anything, confirm the output mode with the user:
+
+Show:
+- Page type: {page_type}
+- Industry: {industry}
+- Output: {output_mode} — "Raw HTML file" or "Live preview on foragentminds.com"
+- Overrides applied (if any): list them
+
+If `output_mode` is `upload` (including when it defaulted to `upload` because the user did not specify):
+- Check whether a foragentminds.com API key has been provided in this conversation.
+- If no API key has been provided, ask for it now before proceeding. This is mandatory — do not continue to Step 6 without it.
+- Store the key for use in Step 10.
+
+Do not proceed to Step 6 until the user confirms and, if uploading, the API key is in hand.
+
+Transition to STATE_CONFIRMED on confirmation. If the user modifies anything, return to Step 1.
+
+---
+
+## Step 6 — Select Reference Template
+
+Internally select the best-matching template. Do not tell the user which template was chosen.
+
+### Available templates
 
 ```
 references/
   Finance/
-    antbank/    antbank.json  antbank.png   → Corporate digital bank, vivid blue, clean flat UI
-    futunn/     futunn.json   futunn.png    → Stock trading app, data-dense, dark accents
-    mox/        mox.json      mox.png       → Neo-bank, neon cyan, editorial, youthful
-    visa/       visa.json     visa.png      → Global payments brand, authoritative blue/gold
+    antbank/              antbank.json              antbank.png              → Corporate digital bank, vivid blue, clean flat UI
+    futunn/               futunn.json               futunn.png               → Stock trading app, data-dense, dark accents
+    mox/                  mox.json                  mox.png                  → Neo-bank, neon cyan, editorial, youthful
+    visa/                 visa.json                 visa.png                 → Global payments brand, authoritative blue/gold
   Healthcare/
-    bowtie/     bowtie.json   bowtie.png    → Insurtech, bold pink/purple gradient, modern
-  Creative/     (reserved — no templates yet)
-  E-commerce/   (reserved — no templates yet)
+    bowtie/               bowtie.json               bowtie.png               → Insurtech, bold pink/purple gradient, modern
+  Creative/
+    adobe-creativecloud/  adobe-creativecloud.json  adobe-creativecloud.png  → Creative software suite, bold red/blue, professional
+    behance/              behance.json              behance.png              → Portfolio showcase platform, deep blue, gallery-forward
+    canva/                canva.json                canva.png                → Design tool, purple/teal gradient, friendly SaaS
+    dribbble/             dribbble.json             dribbble.png             → Design community, pink/dark, showcase-focused
+    roblox-creator/       roblox-creator.json       roblox-creator.png       → Game creator hub, electric blue/green, youthful
+    spotify-for-artists/  spotify-for-artists.json  spotify-for-artists.png  → Music analytics dashboard, vivid purple, dark editorial
+  E-commerce/
+    lululemon/            lululemon.json            lululemon.png            → Premium apparel retail, bold red/black, clean editorial
   Lifestyle/    (reserved — no templates yet)
   Services/     (reserved — no templates yet)
   Tech & SaaS/  (reserved — no templates yet)
@@ -48,42 +168,50 @@ references/
 
 | User request signals | Best match |
 |---|---|
-| Banking, payments, finance app, fintech (youthful / neo-bank) | `Finance/mox` |
+| Banking, payments, fintech (youthful / neo-bank) | `Finance/mox` |
 | Banking, finance (corporate / institutional) | `Finance/antbank` |
 | Stock trading, investment, brokerage, market data | `Finance/futunn` |
 | Payments, card network, enterprise finance | `Finance/visa` |
 | Insurance, health insurance, insurtech | `Healthcare/bowtie` |
 | Healthcare, clinic, medical, wellness | `Healthcare/bowtie` |
-| Any industry with no matching template | Pick the closest available; note the substitution to the user |
+| Creative suite, professional creative tools | `Creative/adobe-creativecloud` |
+| Portfolio, design showcase, creative community | `Creative/behance` or `Creative/dribbble` |
+| Design tool, productivity SaaS, friendly UI | `Creative/canva` |
+| Gaming, creator platform, youth audience | `Creative/roblox-creator` |
+| Music, artist dashboard, media analytics | `Creative/spotify-for-artists` |
+| Apparel, fashion retail, premium e-commerce | `E-commerce/lululemon` |
+| E-commerce (no specific match) | `E-commerce/lululemon` |
+| No matching template | Pick closest available |
 
-Once selected, do **both** of the following:
+Once selected:
 1. Read the `.json` file with the Read tool
-2. Read the `.png` screenshot image with the Read tool (view it visually to absorb the aesthetic)
+2. Read the `.png` screenshot with the Read tool (view it visually to absorb the aesthetic)
 
 ---
 
-## Step 3 — Apply Style Overrides
+## Step 7 — Apply Style Overrides
 
-After loading the template tokens, apply any user-specified overrides:
+Apply any user-specified overrides on top of the loaded template tokens:
 
-- **Font family**: replace `typography.fontFamilies.heading` and `.body` with the requested font. Add the appropriate Google Fonts `<link>` tag. Keep all other type tokens (sizes, weights, line-heights) from the template unless the user also specified them.
-- **Primary colour**: replace `color.brand.primary` and any derived tokens (button backgrounds, borders, focus states, active nav colours) with the user's colour. Derive a hover shade (~15% darker) algorithmically.
-- **Border radius style**: if the user says "sharp" set all radii to ≤4px; "rounded" means cards ~16px, buttons ~8px; "pill" means buttons ~9999px.
-- **Dark / light mode**: if the user specifies a mode, adjust background and text tokens accordingly.
-- Anything else the user specifies overrides the matching token; everything else comes from the template.
+- **Font**: replace `typography.fontFamilies.heading` and `.body`. Add the Google Fonts `<link>` tag.
+- **Primary color**: replace `color.brand.primary` and all derived tokens (buttons, borders, focus states, active nav). Derive a hover shade ~15% darker.
+- **Radius style**: `sharp` → all radii ≤4px; `rounded` → cards ~16px, buttons ~8px; `pill` → buttons 9999px.
+- **Mode**: adjust background and text tokens for dark or light.
+- Any other override replaces the matching token; everything else comes from the template.
 
-Do **not** ask for confirmation — apply the override and proceed.
+Do not ask for confirmation — apply and proceed.
 
 ---
 
-## Step 4 — Generate the HTML/CSS
+## Step 8 — Generate the HTML/CSS
 
 ### Constraints
 - Single self-contained `.html` file (inline `<style>` block, no external CSS frameworks).
 - Use CSS custom properties (`--token-name`) mapped directly from the JSON tokens.
-- Use Google Fonts `<link>` for any web-safe font substitution (the template's custom/proprietary fonts won't load locally).
+- Use Google Fonts `<link>` for web-safe font substitution (proprietary fonts won't load locally).
 - Responsive: mobile-first with at least one breakpoint at ~768px.
 - No JavaScript required for layout; JS only if the user explicitly asks for interactions.
+- Never use emoji anywhere in the HTML.
 
 ### Structure to follow
 
@@ -107,7 +235,7 @@ Do **not** ask for confirmation — apply the override and proceed.
 
     /* 3. Layout utilities */
 
-    /* 4. Component styles (navbar, hero, cards, buttons, inputs, footer …) */
+    /* 4. Component styles (navbar, hero, cards, buttons, inputs, footer ...) */
 
     /* 5. Responsive breakpoints */
   </style>
@@ -176,45 +304,39 @@ Map JSON fields → CSS custom properties like this:
 
 ### Charts and graphs
 
-When the page type or industry implies data visualisation — dashboards, finance apps, health trackers, analytics screens, trading interfaces, admin panels, etc. — include Chart.js charts.
+Include Chart.js charts when the page type or industry implies data visualisation: dashboards, finance apps, health trackers, analytics screens, trading interfaces, admin panels.
 
-**When to use charts (non-exhaustive)**
+**When to use charts**
 - Finance: portfolio performance, spending breakdown, price history, balance trend
 - Healthcare: vitals over time, appointment frequency, health score gauge
 - Dashboards / analytics: KPI trends, category breakdowns, usage over time
 - Any page with stats, metrics, or time-series data
 
 **Loading Chart.js**
-
-Add this `<script>` tag in `<head>` (CDN, no download needed):
 ```html
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 ```
 
-**Theming rules — charts must match the template**
-
-Extract the following from the loaded JSON and apply them to every chart:
+**Theming — charts must match the template**
 
 | Chart property | Token to use |
 |---|---|
-| Dataset primary color (fill / bar / line) | `color.brand.primary` |
+| Dataset primary color | `color.brand.primary` |
 | Dataset secondary color | `color.brand.secondary` or `color.brand.accent` |
-| Gradient fills | Use `color.gradient.primary` if defined, else build a canvas gradient from `primary` → transparent |
+| Gradient fills | `color.gradient.primary` if defined, else `primary` → transparent |
 | Grid lines | `color.border.default` at ~30% opacity |
 | Tick / label text | `color.text.secondary` |
 | Tooltip background | `color.background.card` |
 | Tooltip text | `color.text.primary` |
 | Tooltip border | `color.border.default` |
-| Font family | Match `typography.fontFamilies.body` (use the Google Fonts substitute) |
-| Font size | `typography.fontSizes.sm` for ticks, `typography.fontSizes.base` for tooltips |
+| Font family | `typography.fontFamilies.body` (Google Fonts substitute) |
+| Font size | `typography.fontSizes.sm` for ticks, `.base` for tooltips |
 
 **Implementation pattern**
 
 ```html
 <canvas id="myChart"></canvas>
-
 <script>
-  // Pull token values from CSS custom properties so chart colours stay in sync
   const style = getComputedStyle(document.documentElement);
   const primary   = style.getPropertyValue('--color-primary').trim();
   const secondary = style.getPropertyValue('--color-secondary').trim();
@@ -222,14 +344,13 @@ Extract the following from the loaded JSON and apply them to every chart:
   const border    = style.getPropertyValue('--color-border').trim();
   const surface   = style.getPropertyValue('--color-surface').trim();
 
-  // Optional: gradient fill for line charts
   const ctx = document.getElementById('myChart').getContext('2d');
   const gradient = ctx.createLinearGradient(0, 0, 0, 300);
-  gradient.addColorStop(0, primary + '55');   // ~33% opacity
-  gradient.addColorStop(1, primary + '00');   // transparent
+  gradient.addColorStop(0, primary + '55');
+  gradient.addColorStop(1, primary + '00');
 
   new Chart(ctx, {
-    type: 'line',  // or 'bar', 'doughnut', 'radar', etc.
+    type: 'line',
     data: {
       labels: [...],
       datasets: [{
@@ -245,9 +366,7 @@ Extract the following from the loaded JSON and apply them to every chart:
     options: {
       responsive: true,
       plugins: {
-        legend: {
-          labels: { color: textMuted, font: { family: 'var(--font-body)' } }
-        },
+        legend: { labels: { color: textMuted, font: { family: 'var(--font-body)' } } },
         tooltip: {
           backgroundColor: surface,
           titleColor: style.getPropertyValue('--color-text').trim(),
@@ -257,14 +376,8 @@ Extract the following from the loaded JSON and apply them to every chart:
         }
       },
       scales: {
-        x: {
-          ticks: { color: textMuted },
-          grid:  { color: border + '4D' }   // border at ~30% opacity
-        },
-        y: {
-          ticks: { color: textMuted },
-          grid:  { color: border + '4D' }
-        }
+        x: { ticks: { color: textMuted }, grid: { color: border + '4D' } },
+        y: { ticks: { color: textMuted }, grid: { color: border + '4D' } }
       }
     }
   });
@@ -275,29 +388,76 @@ Extract the following from the loaded JSON and apply them to every chart:
 
 | Data type | Recommended chart |
 |---|---|
-| Trend over time (price, balance, vitals) | `line` with gradient fill |
-| Category breakdown (spending, allocation) | `doughnut` or `bar` |
-| Comparison across groups | `bar` (horizontal or vertical) |
-| Single KPI vs. target | `doughnut` with cutout or gauge pattern |
-| Multi-metric radar | `radar` |
+| Trend over time | `line` with gradient fill |
+| Category breakdown | `doughnut` or `bar` |
+| Comparison across groups | `bar` |
+| Single KPI vs. target | `doughnut` with cutout |
+| Multi-metric | `radar` |
 
-Use realistic sample data that fits the industry. Keep dataset arrays at 7–12 data points for readability.
+Use realistic sample data. Keep dataset arrays at 7–12 data points.
 
 ### Content guidelines
 
+- Never use emoji — not in headings, body text, buttons, labels, icons, or any other element. Use SVG inline icons or Unicode symbols (non-emoji) instead.
 - Use realistic placeholder content that fits the industry (not "Lorem ipsum").
-- Include all standard sections the user requested. If they only said "landing page", default to: Navbar → Hero → Feature/Benefits section → Social proof (stats or testimonials) → CTA → Footer.
-- Match the visual density of the reference screenshot: if the screenshot is data-dense (futunn), be dense; if it's airy and editorial (mox), use generous whitespace.
-- Use SVG inline icons or Unicode symbols rather than icon font dependencies.
-- Images: use `background-color` blocks with a label or a placeholder `<div>` with the correct aspect ratio — do not reference external image URLs unless the user provides them.
+- Include all standard sections the user requested. If they only said "landing page", default to: Navbar → Hero → Features/Benefits → Social proof → CTA → Footer.
+- Match the visual density of the reference: data-dense or airy, as the screenshot shows.
+- Images: use real images from Unsplash via `https://images.unsplash.com/photo-<id>?w=<width>&h=<height>&fit=crop&auto=format`. Choose photos contextually matching the industry. Use well-known Unsplash photo IDs that are likely to resolve. Set `width`, `height`, and `alt` on every image.
+
+Transition to STATE_BUILT on completion.
 
 ---
 
-## Step 5 — Output
+## Step 9 — Validate Against Reference Template
 
-Output the complete HTML file contents directly in a code block tagged `html`.
+Re-read the reference `.png` screenshot and `.json` tokens. Compare the generated output against each checkpoint:
 
-After the code block, add a brief note (2–4 lines) stating:
-- Which template was used and why
+- **Color fidelity**: primary, secondary, background, surface, and text colors match the template tokens
+- **Typography**: heading and body font families, sizes, and weights are consistent
+- **Spacing and layout**: padding, gaps, and density match the visual character of the reference
+- **Component style**: buttons, cards, inputs, and nav elements reflect the reference's shape language (radius, shadow, border treatment)
+- **Overall aesthetic**: the page would plausibly belong to the same design system as the reference
+
+For each checkpoint that fails: correct the HTML/CSS and re-check. Repeat until all checkpoints pass.
+
+Do not skip this step. Do not proceed with a result that fails any checkpoint.
+
+Transition to STATE_VALIDATED on completion.
+
+---
+
+## Step 10 — Deliver Output
+
+### If `output_mode` is `file`
+- Write the file to disk using the Write tool as `output.html` in the current working directory.
+- Tell the user the file path.
+
+### If `output_mode` is `upload`
+- Upload the HTML to foragentminds.com via their API (POST the HTML as page content).
+- Return the live preview URL to the user.
+
+Transition to STATE_DELIVERED on completion.
+
+After delivering, show a brief summary (point-form) covering:
 - Any style overrides that were applied
-- Any substitutions made (e.g. font swap from proprietary to Google Fonts)
+- Any font substitutions made (proprietary → Google Fonts)
+- Any corrections made during validation (Step 9)
+
+Do NOT mention which reference template or brand was used.
+
+---
+
+## Error Handling
+
+### STATE_ERROR
+
+Trigger conditions:
+- Upload API failure
+- File write failure
+- User provides unusable input 3 consecutive times
+- User abandons the flow (no response after 2 follow-ups)
+
+Action:
+- Inform the user clearly using point-form
+- Do not retry automatically
+- Do not proceed

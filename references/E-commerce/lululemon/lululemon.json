@@ -1,0 +1,338 @@
+{
+  "_meta": {
+    "site": "lululemon",
+    "url": "https://shop.lululemon.com/",
+    "date": "2026-04-10",
+    "source": ["css-custom-properties", "computed-styles"],
+    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/E-commerce/lululemon/lululemon.png",
+    "screenshotError": null,
+    "designSystemPrefix": "--lll-",
+    "componentSystemPrefix": "--zest-",
+    "notes": "lululemon uses a dual-token system: '--lll-*' semantic tokens for the storefront and '--zest-*' primitive/spacing tokens for the component library. Custom font 'Calibre' is self-hosted."
+  },
+
+  "color": {
+    "brand": {
+      "primary": "#c8102e",
+      "primaryHover": "#a00d25",
+      "secondary": "#000000",
+      "secondaryHover": "#53565a",
+      "accent": "#c8102e"
+    },
+    "semantic": {
+      "success": "#0f752f",
+      "successSurface": "#ddfbe7",
+      "error": "#d20014",
+      "errorSurface": "#ffe1e4",
+      "warning": "#8a6c00",
+      "warningSurface": "#fff7da",
+      "info": "#2966b0",
+      "infoSurface": "#e7eff9"
+    },
+    "neutral": {
+      "50":  "#fafafa",
+      "100": "#ffffff",
+      "200": "#e5e6e7",
+      "300": "#d3d5d7",
+      "400": "#8d9196",
+      "500": "#6b6f74",
+      "600": "#53565a",
+      "700": "#140f0f",
+      "800": "#000000",
+      "900": "#000000"
+    },
+    "background": {
+      "page":      "#fafafa",
+      "card":      "#ffffff",
+      "sidebar":   "#ffffff",
+      "footer":    "#ffffff",
+      "overlay":   "rgba(0,0,0,0.5) [inferred]",
+      "alternative": "#fafafa"
+    },
+    "text": {
+      "primary":   "#000000",
+      "secondary": "#53565a",
+      "muted":     "#6b6f74",
+      "disabled":  "#6b6f74",
+      "onDark":    "#ffffff",
+      "accent":    "#c8102e"
+    },
+    "border": {
+      "default":  "#8d9196",
+      "subdued":  "#d3d5d7",
+      "disabled": "#d3d5d7",
+      "strong":   "#000000",
+      "inverse":  "#ffffff",
+      "focus":    "#005fcc",
+      "accent":   "#c8102e",
+      "message":  "#53565a"
+    },
+    "interactive": {
+      "priorityDefault":  "#c8102e",
+      "priorityHover":    "#a00d25",
+      "priorityDisabled": "#8d9196",
+      "filledDefault":    "#000000",
+      "filledHover":      "#53565a",
+      "filledDisabled":   "#8d9196",
+      "outlinedDefault":  "#ffffff",
+      "outlinedHover":    "#000000",
+      "outlinedDisabled": "#8d9196"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "heading": "\"Calibre\", \"Helvetica\", \"Helvetica Neue\", \"Roboto\", sans-serif",
+      "body":    "\"Calibre\", \"Helvetica\", \"Helvetica Neue\", \"Roboto\", sans-serif",
+      "secondary": "\"saans\", \"Helvetica\", \"Helvetica Neue\", sans-serif",
+      "mono":    "monospace [inferred]",
+      "icons":   "utility-icons"
+    },
+    "fontSizes": {
+      "xs":   "12px",
+      "sm":   "14px",
+      "base": "17px",
+      "md":   "19px",
+      "lg":   "24px",
+      "xl":   "30px",
+      "2xl":  "40px",
+      "3xl":  "48px",
+      "4xl":  "57px",
+      "5xl":  "72px",
+      "6xl":  "100px"
+    },
+    "fontWeights": {
+      "thin":      100,
+      "light":     300,
+      "regular":   400,
+      "medium":    500,
+      "semibold":  600
+    },
+    "lineHeights": {
+      "tight":   1.0,
+      "snug":    1.25,
+      "normal":  1.5,
+      "relaxed": 1.625
+    },
+    "letterSpacing": {
+      "normal": "0",
+      "wide":   "0.025em [inferred]",
+      "wider":  "0.05em [inferred]"
+    },
+    "body": {
+      "large":      { "fontSize": "19px",  "fontWeight": 400, "lineHeight": "24px", "fontFamily": "Calibre" },
+      "medium":     { "fontSize": "17px",  "fontWeight": 400, "lineHeight": "20px", "fontFamily": "Calibre" },
+      "small":      { "fontSize": "14px",  "fontWeight": 400, "lineHeight": "20px", "fontFamily": "Calibre" },
+      "extraSmall": { "fontSize": "12px",  "fontWeight": 400, "lineHeight": "16px", "fontFamily": "Calibre" }
+    },
+    "headings": {
+      "display": { "fontSize": "100px", "fontWeight": 600, "lineHeight": "92px",  "letterSpacing": "0", "color": "#000000" },
+      "h1":      { "fontSize": "72px",  "fontWeight": 600, "lineHeight": "72px",  "letterSpacing": "0", "color": "#000000" },
+      "h2":      { "fontSize": "57px",  "fontWeight": 600, "lineHeight": "56px",  "letterSpacing": "0", "color": "#000000" },
+      "h3":      { "fontSize": "48px",  "fontWeight": 600, "lineHeight": "48px",  "letterSpacing": "0", "color": "#000000" },
+      "h4":      { "fontSize": "40px",  "fontWeight": 600, "lineHeight": "48px",  "letterSpacing": "0", "color": "#000000" },
+      "h5":      { "fontSize": "30px",  "fontWeight": 600, "lineHeight": "32px",  "letterSpacing": "0", "color": "#000000" },
+      "h6":      { "fontSize": "24px",  "fontWeight": 600, "lineHeight": "28px",  "letterSpacing": "0", "color": "#000000" }
+    },
+    "headingsMobile": {
+      "display": { "fontSize": "72px",  "fontWeight": 600, "lineHeight": "72px" },
+      "h1":      { "fontSize": "56px",  "fontWeight": 600, "lineHeight": "56px" },
+      "h2":      { "fontSize": "48px",  "fontWeight": 600, "lineHeight": "52px" },
+      "h3":      { "fontSize": "36px",  "fontWeight": 600, "lineHeight": "44px" },
+      "h4":      { "fontSize": "30px",  "fontWeight": 600, "lineHeight": "32px" },
+      "h5":      { "fontSize": "26px",  "fontWeight": 600, "lineHeight": "28px" },
+      "h6":      { "fontSize": "22px",  "fontWeight": 600, "lineHeight": "24px" }
+    }
+  },
+
+  "spacing": {
+    "baseUnit": "8px",
+    "scale": {
+      "25":   "2px",
+      "50":   "4px",
+      "100":  "8px",
+      "150":  "12px",
+      "200":  "16px",
+      "250":  "20px",
+      "300":  "24px",
+      "400":  "32px",
+      "500":  "40px",
+      "600":  "48px",
+      "800":  "64px",
+      "900":  "72px",
+      "1000": "80px",
+      "1100": "88px",
+      "1200": "96px",
+      "1600": "128px",
+      "2000": "160px",
+      "3200": "256px"
+    },
+    "containers": {
+      "max": "1322px"
+    },
+    "grid": {
+      "columns": 12,
+      "gutterSmall":  "10px",
+      "gutterMedium": "15px",
+      "gutterLarge":  "25px"
+    },
+    "sectionPadding": {
+      "vertical":   "80px [inferred]",
+      "horizontal": "24px [inferred]"
+    }
+  },
+
+  "border": {
+    "radius": {
+      "none": "0px",
+      "xs":   "2px",
+      "sm":   "5px",
+      "base": "8px",
+      "lg":   "32px",
+      "xl":   "40px",
+      "full": "1000px"
+    },
+    "widths": {
+      "thin":   "1px",
+      "medium": "2px",
+      "thick":  "4px"
+    },
+    "colors": {
+      "default": "#8d9196",
+      "muted":   "#d3d5d7",
+      "strong":  "#000000",
+      "focus":   "#005fcc"
+    },
+    "styles": ["solid"]
+  },
+
+  "shadows": {
+    "sm": "0 1px 2px rgba(0,0,0,0.05) [inferred]",
+    "md": "0 4px 6px rgba(0,0,0,0.08) [inferred]",
+    "lg": "0 8px 16px rgba(0,0,0,0.12) [inferred]",
+    "xl": "0 16px 32px rgba(0,0,0,0.16) [inferred]"
+  },
+  "elevation": {
+    "card":     "none",
+    "dropdown": "sm [inferred]",
+    "modal":    "lg [inferred]",
+    "tooltip":  "sm [inferred]"
+  },
+
+  "animation": {
+    "extraFast": "125ms",
+    "fast":      "250ms",
+    "medium":    "500ms",
+    "slow":      "1000ms",
+    "extraSlow": "2000ms"
+  },
+
+  "breakpoints": {
+    "sm":  "480px",
+    "md":  "768px",
+    "lg":  "992px",
+    "xl":  "1200px",
+    "2xl": "1270px"
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background":   "#c8102e",
+        "text":         "#ffffff",
+        "border":       "none",
+        "borderRadius": "0px",
+        "paddingX":     "24px [inferred]",
+        "paddingY":     "12px [inferred]",
+        "fontWeight":   600,
+        "fontSize":     "14px",
+        "hoverBg":      "#a00d25"
+      },
+      "secondary": {
+        "background":   "#000000",
+        "text":         "#ffffff",
+        "border":       "none",
+        "borderRadius": "0px",
+        "paddingX":     "24px [inferred]",
+        "paddingY":     "12px [inferred]",
+        "fontWeight":   600,
+        "fontSize":     "14px",
+        "hoverBg":      "#53565a"
+      },
+      "ghost": {
+        "background":   "transparent",
+        "text":         "#000000",
+        "border":       "1px solid #000000",
+        "borderRadius": "0px",
+        "paddingX":     "24px [inferred]",
+        "paddingY":     "12px [inferred]",
+        "fontWeight":   600,
+        "fontSize":     "14px"
+      },
+      "sizes": {
+        "sm": { "height": "32px", "paddingX": "16px", "fontSize": "12px" },
+        "md": { "height": "40px", "paddingX": "24px", "fontSize": "14px" },
+        "lg": { "height": "48px", "paddingX": "32px", "fontSize": "16px" }
+      }
+    },
+    "input": {
+      "background":       "#ffffff",
+      "borderColor":      "#140f0f",
+      "borderRadius":     "6px",
+      "padding":          "8px 12px [inferred]",
+      "fontSize":         "14px [inferred]",
+      "placeholderColor": "#6b6f74",
+      "focus": {
+        "borderColor": "#005fcc",
+        "ringColor":   "#005fcc",
+        "ringWidth":   "2px [inferred]"
+      }
+    },
+    "card": {
+      "background":   "#ffffff",
+      "border":       "none",
+      "borderRadius": "0px",
+      "padding":      "0px",
+      "shadow":       "none"
+    },
+    "badge": {
+      "background":   "#e5e6e7 [inferred]",
+      "text":         "#000000 [inferred]",
+      "borderRadius": "1000px",
+      "padding":      "2px 8px [inferred]",
+      "fontSize":     "12px",
+      "fontWeight":   400
+    },
+    "navbar": {
+      "background":   "#ffffff",
+      "height":       "41px",
+      "borderBottom": "none",
+      "itemColor":    "#000000",
+      "activeColor":  "#c8102e",
+      "activeStyle":  "underline [inferred]"
+    }
+  },
+
+  "iconography": {
+    "style": "outline",
+    "font":  "utility-icons",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+  "imagery": {
+    "borderRadius": "0px",
+    "aspectRatios": ["2:3", "3:4", "1:1", "16:9"],
+    "treatments":   ["no border-radius", "full-bleed", "product on white bg"]
+  },
+
+  "brand": {
+    "tone":           ["premium", "minimal", "clean", "energetic", "bold"],
+    "visualLanguage": ["light mode", "flat 2D", "editorial", "high-contrast black & white with red accent"],
+    "industry":       "E-commerce",
+    "notes":          "lululemon's design system (internally 'Zest') is built around a stark black-and-white foundation with a signature red (#c8102e) accent. Typography is exclusively Calibre — a custom geometric sans-serif — giving the brand a clean, premium athletic feel. No box shadows or border-radius on cards/buttons — the aesthetic is intentionally flat and editorial. The 'yogo' color token (#140f0f) is a near-black with a warm undertone, used for icon fills."
+  }
+}
