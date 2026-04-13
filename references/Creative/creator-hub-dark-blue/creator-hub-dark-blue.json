@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Roblox Creator Hub",
-    "url": "https://create.roblox.com/landing",
+    "site": "Creator Hub Dark Blue",
+    "url": "",
     "date": "2026-04-13",
     "source": ["css-custom-properties", "computed-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/roblox-creator/roblox-creator.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -55,9 +55,9 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"Builder Sans\", Helvetica, Arial, sans-serif",
-      "body":    "\"Builder Sans\", Helvetica, Arial, sans-serif",
-      "mono":    "\"Builder Mono\", monospace"
+      "heading": "Helvetica, Arial, sans-serif",
+      "body":    "Helvetica, Arial, sans-serif",
+      "mono":    "monospace"
     },
     "scaleBase": "4px",
     "fontSizes": {
@@ -338,7 +338,7 @@
     "tone":           ["bold", "technical", "energetic", "dark", "immersive", "aspirational"],
     "visualLanguage": ["dark mode", "deep space aesthetic", "blue accent highlights", "gaming-focused", "flat 2D with depth"],
     "industry":       "Creative",
-    "notes":          "Roblox Creator Hub uses a deep dark background (#111216) with a bold blue (#335fff) primary action color. Custom font 'Builder Sans' (a variable font supporting weights 100–900 and intermediate values like 450). The design system uses a strict 4px base unit for all spacing, sizing, and typography tokens. Hero CTAs use an inverted white-on-dark button as the primary action. The page is dark-mode only. Breakpoints: 360/600/1140/1520/1920px."
+    "notes":          "Uses a deep dark background (#111216) with a bold blue (#335fff) primary action color. Custom variable font supporting weights 100–900 and intermediate values like 450. The design system uses a strict 4px base unit for all spacing, sizing, and typography tokens. Hero CTAs use an inverted white-on-dark button as the primary action. The page is dark-mode only. Breakpoints: 360/600/1140/1520/1920px."
   },
 
   "cssVariables": {

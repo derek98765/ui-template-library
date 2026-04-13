@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "site": "lululemon",
-    "url": "https://shop.lululemon.com/",
+    "site": "Apparel Retail Red",
+    "url": "",
     "date": "2026-04-10",
     "source": ["css-custom-properties", "computed-styles"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/E-commerce/lululemon/lululemon.png",
+    "screenshotPath": "",
     "screenshotError": null,
-    "designSystemPrefix": "--lll-",
-    "componentSystemPrefix": "--zest-",
-    "notes": "lululemon uses a dual-token system: '--lll-*' semantic tokens for the storefront and '--zest-*' primitive/spacing tokens for the component library. Custom font 'Calibre' is self-hosted."
+    "designSystemPrefix": "--brand-",
+    "componentSystemPrefix": "--component-",
+    "notes": "Uses a dual-token system: semantic tokens for the storefront and primitive/spacing tokens for the component library. Custom font 'Calibre' is self-hosted."
   },
 
   "color": {
@@ -82,9 +82,9 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"Calibre\", \"Helvetica\", \"Helvetica Neue\", \"Roboto\", sans-serif",
-      "body":    "\"Calibre\", \"Helvetica\", \"Helvetica Neue\", \"Roboto\", sans-serif",
-      "secondary": "\"saans\", \"Helvetica\", \"Helvetica Neue\", sans-serif",
+      "heading": "\"Helvetica\", \"Helvetica Neue\", \"Roboto\", sans-serif",
+      "body":    "\"Helvetica\", \"Helvetica Neue\", \"Roboto\", sans-serif",
+      "secondary": "\"Helvetica\", \"Helvetica Neue\", sans-serif",
       "mono":    "monospace [inferred]",
       "icons":   "utility-icons"
     },
@@ -120,10 +120,10 @@
       "wider":  "0.05em [inferred]"
     },
     "body": {
-      "large":      { "fontSize": "19px",  "fontWeight": 400, "lineHeight": "24px", "fontFamily": "Calibre" },
-      "medium":     { "fontSize": "17px",  "fontWeight": 400, "lineHeight": "20px", "fontFamily": "Calibre" },
-      "small":      { "fontSize": "14px",  "fontWeight": 400, "lineHeight": "20px", "fontFamily": "Calibre" },
-      "extraSmall": { "fontSize": "12px",  "fontWeight": 400, "lineHeight": "16px", "fontFamily": "Calibre" }
+      "large":      { "fontSize": "19px",  "fontWeight": 400, "lineHeight": "24px" },
+      "medium":     { "fontSize": "17px",  "fontWeight": 400, "lineHeight": "20px" },
+      "small":      { "fontSize": "14px",  "fontWeight": 400, "lineHeight": "20px" },
+      "extraSmall": { "fontSize": "12px",  "fontWeight": 400, "lineHeight": "16px" }
     },
     "headings": {
       "display": { "fontSize": "100px", "fontWeight": 600, "lineHeight": "92px",  "letterSpacing": "0", "color": "#000000" },
@@ -333,6 +333,6 @@
     "tone":           ["premium", "minimal", "clean", "energetic", "bold"],
     "visualLanguage": ["light mode", "flat 2D", "editorial", "high-contrast black & white with red accent"],
     "industry":       "E-commerce",
-    "notes":          "lululemon's design system (internally 'Zest') is built around a stark black-and-white foundation with a signature red (#c8102e) accent. Typography is exclusively Calibre — a custom geometric sans-serif — giving the brand a clean, premium athletic feel. No box shadows or border-radius on cards/buttons — the aesthetic is intentionally flat and editorial. The 'yogo' color token (#140f0f) is a near-black with a warm undertone, used for icon fills."
+    "notes":          "Built around a stark black-and-white foundation with a signature red (#c8102e) accent. Typography uses a custom geometric sans-serif — giving the brand a clean, premium athletic feel. No box shadows or border-radius on cards/buttons — the aesthetic is intentionally flat and editorial. A near-black color (#140f0f) with a warm undertone is used for icon fills."
   }
 }

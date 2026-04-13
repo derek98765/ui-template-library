@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Spotify for Artists",
-    "url": "https://artists.spotify.com/home",
+    "site": "Music Analytics Purple",
+    "url": "",
     "date": "2026-04-13",
     "source": ["css-custom-properties", "computed-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/spotify-for-artists/spotify-for-artists.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -13,7 +13,7 @@
       "primary":   "#4100f4",
       "secondary": "#000000",
       "accent":    "#4100f4",
-      "note":      "Spotify for Artists uses vivid purple #4100f4 as accent, NOT the consumer Spotify green #1ed760"
+      "note":      "Uses vivid purple #4100f4 as accent"
     },
     "semantic": {
       "success": "#159542",
@@ -74,13 +74,13 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif",
-      "body":    "SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif",
+      "heading": "sans-serif",
+      "body":    "sans-serif",
       "mono":    null
     },
     "fontStacks": {
-      "--encore-title-font-stack": "SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif",
-      "--encore-body-font-stack":  "SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif"
+      "--encore-title-font-stack": "sans-serif",
+      "--encore-body-font-stack":  "sans-serif"
     },
     "fontSizes": {
       "xs":   "12px",
@@ -122,12 +122,12 @@
       "wide":   "0.025em"
     },
     "headings": {
-      "h1": { "fontSize": "48px", "fontWeight": 700, "lineHeight": 1.1, "letterSpacing": "normal", "color": "#ffffff", "fontFamily": "SpotifyMixUITitle" },
-      "h2": { "fontSize": "32px", "fontWeight": 700, "lineHeight": 1.2, "letterSpacing": "normal", "color": "#ffffff", "fontFamily": "SpotifyMixUITitle" },
-      "h3": { "fontSize": "24px", "fontWeight": 700, "lineHeight": 1.3, "letterSpacing": "normal", "color": "#000000", "fontFamily": "SpotifyMixUITitle" },
-      "h4": { "fontSize": "16px", "fontWeight": 700, "lineHeight": 1.4, "letterSpacing": "normal", "color": "#ffffff", "fontFamily": "SpotifyMixUITitle" },
-      "h5": { "fontSize": "14px", "fontWeight": 700, "lineHeight": 1.4, "letterSpacing": "normal", "color": "#ffffff", "fontFamily": "SpotifyMixUI" },
-      "h6": { "fontSize": "12px", "fontWeight": 700, "lineHeight": 1.4, "letterSpacing": "normal", "color": "#ffffff", "fontFamily": "SpotifyMixUI" }
+      "h1": { "fontSize": "48px", "fontWeight": 700, "lineHeight": 1.1, "letterSpacing": "normal", "color": "#ffffff" },
+      "h2": { "fontSize": "32px", "fontWeight": 700, "lineHeight": 1.2, "letterSpacing": "normal", "color": "#ffffff" },
+      "h3": { "fontSize": "24px", "fontWeight": 700, "lineHeight": 1.3, "letterSpacing": "normal", "color": "#000000" },
+      "h4": { "fontSize": "16px", "fontWeight": 700, "lineHeight": 1.4, "letterSpacing": "normal", "color": "#ffffff" },
+      "h5": { "fontSize": "14px", "fontWeight": 700, "lineHeight": 1.4, "letterSpacing": "normal", "color": "#ffffff" },
+      "h6": { "fontSize": "12px", "fontWeight": 700, "lineHeight": 1.4, "letterSpacing": "normal", "color": "#ffffff" }
     }
   },
 
@@ -342,7 +342,7 @@
     "tone":           ["bold", "premium", "dark", "artist-first", "energetic", "immersive"],
     "visualLanguage": ["dark mode primary", "vivid purple accent", "full-bleed photography", "high contrast", "alternating dark/light sections"],
     "industry":       "Creative",
-    "notes":          "Spotify for Artists uses Spotify's proprietary 'SpotifyMixUI' (body) and 'SpotifyMixUITitle' (headings) typefaces, both based on Circular. The primary accent is vivid purple #4100f4 — distinct from Spotify consumer green #1ed760. The Encore design system underpins the UI with a systematic --encore-spacing-*, --encore-corner-radius-*, --encore-text-size-*, --encore-control-size-* token scale. The page alternates between deep black (#000), dark charcoal (#181818), vivid purple (#4100f4), and white sections. All buttons use full pill shape (border-radius: 9999px)."
+    "notes":          "Uses proprietary circular typefaces for both headings and body text. The primary accent is vivid purple (#4100f4). The design system uses a systematic --encore-spacing-*, --encore-corner-radius-*, --encore-text-size-*, --encore-control-size-* token scale. The page alternates between deep black (#000), dark charcoal (#181818), vivid purple (#4100f4), and white sections. All buttons use full pill shape (border-radius: 9999px)."
   },
 
   "cssVariables": {

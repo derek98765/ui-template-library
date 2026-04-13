@@ -151,14 +151,14 @@ references/
   Healthcare/
     bowtie/               bowtie.json               bowtie.png               → Insurtech, bold pink/purple gradient, modern
   Creative/
-    adobe-creativecloud/  adobe-creativecloud.json  adobe-creativecloud.png  → Creative software suite, bold red/blue, professional
-    behance/              behance.json              behance.png              → Portfolio showcase platform, deep blue, gallery-forward
-    canva/                canva.json                canva.png                → Design tool, purple/teal gradient, friendly SaaS
-    dribbble/             dribbble.json             dribbble.png             → Design community, pink/dark, showcase-focused
-    roblox-creator/       roblox-creator.json       roblox-creator.png       → Game creator hub, electric blue/green, youthful
-    spotify-for-artists/  spotify-for-artists.json  spotify-for-artists.png  → Music analytics dashboard, vivid purple, dark editorial
+    creative-suite-red/       creative-suite-red.json       creative-suite-red.png       → Creative software suite, bold red/blue, professional
+    portfolio-showcase-blue/  portfolio-showcase-blue.json  portfolio-showcase-blue.png  → Portfolio showcase platform, deep blue, gallery-forward
+    design-tool-purple/       design-tool-purple.json       design-tool-purple.png       → Design tool, purple/teal gradient, friendly SaaS
+    design-community-pink/    design-community-pink.json    design-community-pink.png    → Design community, pink/dark, showcase-focused
+    creator-hub-dark-blue/    creator-hub-dark-blue.json    creator-hub-dark-blue.png    → Game creator hub, electric blue/green, dark mode
+    music-analytics-purple/   music-analytics-purple.json   music-analytics-purple.png   → Music analytics dashboard, vivid purple, dark editorial
   E-commerce/
-    lululemon/            lululemon.json            lululemon.png            → Premium apparel retail, bold red/black, clean editorial
+    apparel-retail-red/       apparel-retail-red.json       apparel-retail-red.png       → Premium apparel retail, bold red/black, clean editorial
   Lifestyle/    (reserved — no templates yet)
   Services/     (reserved — no templates yet)
   Tech & SaaS/  (reserved — no templates yet)
@@ -174,13 +174,14 @@ references/
 | Payments, card network, enterprise finance | `Finance/visa` |
 | Insurance, health insurance, insurtech | `Healthcare/bowtie` |
 | Healthcare, clinic, medical, wellness | `Healthcare/bowtie` |
-| Creative suite, professional creative tools | `Creative/adobe-creativecloud` |
-| Portfolio, design showcase, creative community | `Creative/behance` or `Creative/dribbble` |
-| Design tool, productivity SaaS, friendly UI | `Creative/canva` |
-| Gaming, creator platform, youth audience | `Creative/roblox-creator` |
-| Music, artist dashboard, media analytics | `Creative/spotify-for-artists` |
-| Apparel, fashion retail, premium e-commerce | `E-commerce/lululemon` |
-| E-commerce (no specific match) | `E-commerce/lululemon` |
+| Creative suite, professional creative tools | `Creative/creative-suite-red` |
+| Portfolio showcase, gallery, editorial blue | `Creative/portfolio-showcase-blue` |
+| Design community, pink/dark, showcase-focused | `Creative/design-community-pink` |
+| Design tool, productivity SaaS, friendly UI | `Creative/design-tool-purple` |
+| Gaming, creator platform, dark mode, youth | `Creative/creator-hub-dark-blue` |
+| Music, artist dashboard, media analytics | `Creative/music-analytics-purple` |
+| Apparel, fashion retail, premium e-commerce | `E-commerce/apparel-retail-red` |
+| E-commerce (no specific match) | `E-commerce/apparel-retail-red` |
 | No matching template | Pick closest available |
 
 Once selected:

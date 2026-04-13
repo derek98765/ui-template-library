@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "site": "Canva",
-    "url": "https://www.canva.com/video-editor/",
+    "site": "Design Tool Purple",
+    "url": "",
     "date": "2026-04-13",
     "source": ["css-custom-properties", "computed-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/canva/canva.png",
+    "screenshotPath": "",
     "screenshotError": null,
-    "note": "Canva uses CSS-in-JS with hashed variable names (e.g. --HfWZ1A). Design tokens are inferred from computed values and hex patterns in CSS vars."
+    "note": "Uses CSS-in-JS with hashed variable names. Design tokens are inferred from computed values and hex patterns in CSS vars."
   },
 
   "color": {
@@ -100,8 +100,8 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"Canva Sans\", Arial, sans-serif",
-      "body":    "\"Canva Sans\", Arial, sans-serif",
+      "heading": "Arial, sans-serif",
+      "body":    "Arial, sans-serif",
       "mono":    null
     },
     "scaleBase": "10px",
@@ -142,7 +142,7 @@
       "h4": { "fontSize": "18px", "fontWeight": 600, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#0f1015" },
       "h5": { "fontSize": "16px", "fontWeight": 600, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#0f1015" },
       "h6": { "fontSize": "14px", "fontWeight": 600, "lineHeight": "1.3",  "letterSpacing": "normal", "color": "#0f1015" },
-      "note": "Canva's marketing page uses relatively compact headings (24px for H1–H3); display sizes are achieved with large type in the canvas editor itself"
+      "note": "The marketing page uses relatively compact headings (24px for H1–H3); display sizes are achieved with large type in the editor canvas itself"
     }
   },
 
@@ -250,7 +250,7 @@
         "borderRadius": "8px",
         "paddingX":     "16px",
         "height":       "40px",
-        "fontFamily":   "\"Canva Sans\"",
+        "fontFamily":   "Arial, sans-serif",
         "fontWeight":   600,
         "fontSize":     "14px",
         "hover": { "background": "#7630d7" }
@@ -357,7 +357,7 @@
     "tone":           ["creative", "approachable", "vibrant", "playful", "energetic"],
     "visualLanguage": ["light mode", "purple-teal gradient identity", "soft shadows (layered translucent)", "8px radius components", "pill badges", "translucent navbar on scroll"],
     "industry":       "Creative",
-    "notes":          "Canva uses a proprietary font 'Canva Sans'. The design system is CSS-in-JS with fully hashed variable names (e.g. --HfWZ1A), making token names unreadable — values are recoverable but semantics must be inferred. Root font-size is 10px, so all calc(0.1rem*N) values equal N px directly. Primary brand color is vibrant purple (#8b3dff); the iconic brand gradient runs from teal (#00c4cc) to deep purple (#7d2ae8). Shadows are multi-layer composites with dark navy/blue shadows at low opacity (Canva's signature 'soft elevation' look). Buttons and interactive elements use 8px border-radius (not pill). The navbar is transparent on page load and becomes frosted white (#ffffffcc) on scroll. CSS variable names that are readable include: --totl-primary-background, --totl-primary-font-color, --safe-area-inset-*, and --4h-m_A (color-scheme: light)."
+    "notes":          "Uses a proprietary sans-serif font. The design system is CSS-in-JS with fully hashed variable names, making token names unreadable — values are recoverable but semantics must be inferred. Root font-size is 10px, so all calc(0.1rem*N) values equal N px directly. Primary brand color is vibrant purple (#8b3dff); the brand gradient runs from teal (#00c4cc) to deep purple (#7d2ae8). Shadows are multi-layer composites with dark navy/blue shadows at low opacity — a signature 'soft elevation' look. Buttons and interactive elements use 8px border-radius (not pill). The navbar is transparent on page load and becomes frosted white (#ffffffcc) on scroll."
   },
 
   "cssVariables": {

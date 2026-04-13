@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Dribbble",
-    "url": "https://dribbble.com/",
+    "site": "Design Community Pink",
+    "url": "",
     "date": "2026-04-13",
     "source": ["css-custom-properties", "computed-styles", "inline-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/dribbble/dribbble.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -48,19 +48,11 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"Mona Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-      "body":    "\"Mona Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "heading": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "body":    "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "mono":    "\"IBM Plex Mono\", monospace"
     },
-    "loadedFonts": [
-      "Mona Sans",
-      "IBM Plex Mono",
-      "Source Serif 4",
-      "WF Visual Sans",
-      "Inter Regular",
-      "Inter Semibold",
-      "Walsheim"
-    ],
+    "loadedFonts": [],
     "fontSizes": {
       "xs":   "12px",
       "sm":   "13px",
@@ -296,7 +288,7 @@
     "tone":           ["creative", "vibrant", "playful", "community-driven", "aspirational"],
     "visualLanguage": ["light mode", "flat 2D", "colorful", "masonry grid", "image-forward"],
     "industry":       "Creative",
-    "notes":          "Dribbble uses a near-black (#0d0c22) + hot pink (#ea4c89) brand palette. The font is 'Mona Sans' (GitHub's variable font). The site relies on a 4-column masonry grid of shot thumbnails — design is deliberately minimal to let user work shine. Pill-shaped buttons (border-radius: 9999px) are a signature element. The Shoelace web component library underpins many UI components with a comprehensive --sl-color-* token system. Hover states reveal muted purple (#7b7194) on nav links."
+    "notes":          "Uses a near-black (#0d0c22) + hot pink (#ea4c89) brand palette. The font is a variable sans-serif. The site relies on a 4-column masonry grid — design is deliberately minimal to let user work shine. Pill-shaped buttons (border-radius: 9999px) are a signature element. Hover states reveal muted purple (#7b7194) on nav links."
   },
 
   "cssVariables": {

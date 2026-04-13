@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Behance",
-    "url": "https://www.behance.net/",
+    "site": "Portfolio Showcase Blue",
+    "url": "",
     "date": "2026-04-13",
     "source": ["css-custom-properties", "computed-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/behance/behance.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -91,10 +91,10 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "acumin-pro-wide, \"Acumin Pro Wide\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-      "body":    "acumin-pro, \"Acumin Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-      "ui":      "adobe-clean, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
-      "icons":   "BeIcons",
+      "heading": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "body":    "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "ui":      "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "icons":   "custom-icon-font",
       "mono":    null
     },
     "fontSizes": {
@@ -344,7 +344,7 @@
 
   "iconography": {
     "style":   "filled",
-    "library": "BeIcons (custom Behance icon font)",
+    "library": "custom icon font",
     "sizes": {
       "sm": "16px",
       "md": "20px",
@@ -362,7 +362,7 @@
     "tone":           ["clean", "editorial", "professional", "gallery-focused", "creative"],
     "visualLanguage": ["light mode", "off-white background", "blue accent", "bold editorial heading with tight tracking", "masonry grid", "image-forward"],
     "industry":       "Creative",
-    "notes":          "Behance uses Adobe's proprietary font system: 'Acumin Pro Wide' for large headings (with extreme negative letter-spacing, e.g. -4px at 80px) and 'Acumin Pro' for body text. The primary brand color is a vivid blue (#0057ff). All buttons use a pill shape (border-radius: 100px). The page background is off-white (#f9f9f9). The design is light, clean, and editorial — letting creative work shine. Masonry project grid has no border-radius on image thumbnails. The --be- CSS custom property namespace is comprehensive, covering spacing (--be-sp-*), color, button variants, and component tokens."
+    "notes":          "Uses a proprietary condensed sans-serif for large headings (with extreme negative letter-spacing, e.g. -4px at 80px) and a regular-width variant for body text. The primary brand color is a vivid blue (#0057ff). All buttons use a pill shape (border-radius: 100px). The page background is off-white (#f9f9f9). The design is light, clean, and editorial — letting creative work shine. Masonry project grid has no border-radius on image thumbnails. The --be- CSS custom property namespace is comprehensive, covering spacing, color, button variants, and component tokens."
   },
 
   "cssVariables": {

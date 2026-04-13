@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "site": "Adobe Creative Cloud",
-    "url": "https://www.adobe.com/creativecloud.html",
+    "site": "Creative Suite Red",
+    "url": "",
     "date": "2026-04-13",
     "source": ["css-custom-properties", "computed-styles", "inferred"],
-    "screenshotPath": "/Users/derekfung/.claude/skills/styles-extractor/references/Creative/adobe-creativecloud/adobe-creativecloud.png",
+    "screenshotPath": "",
     "screenshotError": null
   },
 
@@ -78,7 +78,7 @@
       "grey-800":     "#222222"
     },
     "feds": {
-      "adobeBrand":    "#eb1000",
+      "brandRed":    "#eb1000",
       "ctaPrimary":    "#3b63fb",
       "ctaPrimaryHover": "#274dea",
       "blueLink":      "#274dea",
@@ -89,9 +89,9 @@
 
   "typography": {
     "fontFamilies": {
-      "heading": "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
-      "body":    "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
-      "ui":      "\"Adobe Clean\", adobe-clean, \"Trebuchet MS\", sans-serif",
+      "heading": "\"Trebuchet MS\", sans-serif",
+      "body":    "\"Trebuchet MS\", sans-serif",
+      "ui":      "\"Trebuchet MS\", sans-serif",
       "mono":    "\"Roboto Mono\", menlo, consolas, \"Liberation Mono\", monospace"
     },
     "fontSizes": {
@@ -368,9 +368,9 @@
 
   "brand": {
     "tone":           ["professional", "bold", "creative", "premium", "editorial"],
-    "visualLanguage": ["mixed mode (dark hero + light body)", "bold 800-weight headings", "Adobe red corporate brand", "CTA blue action color", "12-column 1200px grid", "card-based app showcase"],
+    "visualLanguage": ["mixed mode (dark hero + light body)", "bold 800-weight headings", "red corporate brand", "CTA blue action color", "12-column 1200px grid", "card-based app showcase"],
     "industry":       "Creative",
-    "notes":          "Adobe Creative Cloud uses the proprietary 'Adobe Clean' font (also aliased as 'adobe-clean') across all text. Headings are extremely bold (800 weight) at large scales up to 80px. The corporate brand color is Adobe red (#eb1000), but primary CTAs and links use a vivid blue (#3b63fb / #274dea). The page uses a mixed dark/light layout: a black hero section, then a white body. Border-radius on CTAs is 16px (--l-rounded-corners) — notably more rectangular than pill-style. The design system namespace includes: --type-* (full typography scale), --consonant-merch-* (commerce/pricing component tokens), --feds-* (global nav/footer tokens), --spectrum-* (Adobe Spectrum color system), --spacing-* (spacing scale), --merch-color-* (commerce semantic colors). Grid max-width is 1200px (12 columns of 100px each); nav/footer max-width is 1440px."
+    "notes":          "Uses a proprietary sans-serif font across all text. Headings are extremely bold (800 weight) at large scales up to 80px. The corporate brand color is red (#eb1000), but primary CTAs and links use a vivid blue (#3b63fb / #274dea). The page uses a mixed dark/light layout: a black hero section, then a white body. Border-radius on CTAs is 16px — notably more rectangular than pill-style. Grid max-width is 1200px (12 columns of 100px each); nav/footer max-width is 1440px."
   },
 
   "cssVariables": {
@@ -400,8 +400,8 @@
       "--type-lockup-s-size":      "22px",
       "--type-lockup-xs-size":     "16px",
       "--type-lockup-xxs-size":    "11px",
-      "--body-font-family":        "'Adobe Clean', adobe-clean, 'Trebuchet MS', sans-serif",
-      "--merch-body-font-family":  "'Adobe Clean', adobe-clean, 'Trebuchet MS', sans-serif",
+      "--body-font-family":        "'Trebuchet MS', sans-serif",
+      "--merch-body-font-family":  "'Trebuchet MS', sans-serif",
       "--fixed-font-family":       "'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace"
     },
     "colors": {
@@ -432,7 +432,7 @@
       "--spectrum-yellow-300":       "#f5c700",
       "--spectrum-indigo-300":       "#d3d5ff",
       "--spectrum-indigo-900":       "#5258e4",
-      "--feds-color-adobeBrand":     "#eb1000",
+      "--feds-color-brand":     "#eb1000",
       "--feds-cta-primary-bg":       "#3b63fb",
       "--feds-cta-primary-bg--hover":"#274dea",
       "--feds-color-blue-link":      "#274dea",
